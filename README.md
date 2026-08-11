@@ -31,7 +31,7 @@ Plataforma web bilingüe e interfaz institucional de alta gama para **Warhorse L
 
 ```bash
 # 1. Clonar repositorio
-git clone https://github.com/gruizmetasolutions-cpu/warhorse-frontend.git
+git clone https://github.com/gruizmetasolutions-cpu/warhorse-web-frontend.git
 cd warhorse-frontend
 
 # 2. Instalar dependencias

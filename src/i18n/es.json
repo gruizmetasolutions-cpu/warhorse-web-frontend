@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "security": "Seguridad y Cumplimiento",
+    "contact": "Contacto",
+    "quote": "Cotizar Ahora"
+  },
+  "home": {
+    "hero_slogan": "Contigo en cada paso del camino",
+    "hero_value": "Entregando más que carga. Entregando valor.",
+    "hero_desc": "Solidez operativa y mitigación de riesgos en cadenas de suministro críticas transfronterizas entre Estados Unidos, México y Canadá.",
+    "kpi_assets": "850+ Activos Propios",
+    "kpi_carriers": "Red de 500,000+ Transportistas",
+    "kpi_countries": "Cobertura en 3 Países",
+    "kpi_ontime": "98%+ Entregas a Tiempo",
+    "kpi_clients": "100+ Clientes Corporativos",
+    "kpi_visibility": "Visibilidad 24/7"
+  },
+  "about": {
+    "title": "Estructura Corporativa",
+    "brokerage_title": "Warhorse Brokerage LLC",
+    "brokerage_desc": "Unidad de gestión y torre de control para la coordinación estratégica de carga en EE. UU. (Eje del modelo 5PL).",
+    "transportation_title": "Warhorse Transportation LLC",
+    "transportation_desc": "Carrier estadounidense certificado por FMCSA en El Paso, TX. Activos: 50+ tractores, 100+ cajas secas, plataformas y unidades de servicio.",
+    "logistics_title": "Warhorse Logistics de México",
+    "logistics_desc": "Carrier mexicano certificado por CTPAT en Cd. Juárez, CHIH. Activos: 150+ tractores, 250+ cajas secas, 250+ reefers, patio privado y unidades de servicio."
+  },
+  "services": {
+    "title": "Servicios Logísticos y Especializados",
+    "logistics": "Logística 1PL-3PL: FTL, LTL, Intermodal (Carretera, Tren, Mar), Aéreo y Flotas Dedicadas.",
+    "management": "Estrategia 4PL/5PL: 'Managed Transportation & Control Tower' a través de Warhorse Brokerage LLC para gestión total.",
+    "support": "Asistencia 24/7, sistemas de combustible automatizados, mantenimiento certificado DOT y soporte directo en sitio."
+  },
+  "security": {
+    "title": "Seguridad, Cumplimiento y Gestión de Riesgos",
+    "infrastructure": "Seguridad 24/7, control de accesos biométrico y videovigilancia avanzada.",
+    "human_capital": "Verificación rigurosa de antecedentes y capacitación técnica continua.",
+    "k9": "Unidad K9 disponible para cargas de alto valor.",
+    "inspection_title": "Inspección de 19 Puntos",
+    "inspection_desc": "Inspección pre-salida que garantiza 'cero tiempo de inactividad' y la integridad de la unidad.",
+    "monitoring": "Sellos ISO 17712, GPS de última generación y rutas seguras predeterminadas."
+  },
+  "contact": {
+    "title": "Solicitar Cotización",
+    "form_name": "Nombre Completo",
+    "form_email": "Correo Electrónico",
+    "form_service": "Servicio Requerido",
+    "form_message": "Detalles Adicionales",
+    "submit": "Enviar Solicitud",
+    "success": "Su solicitud ha sido enviada exitosamente.",
+    "services_options": {
+      "ftl": "FTL (Carga Completa)",
+      "ltl": "LTL (Carga Consolidada)",
+      "special": "Proyecto Especial",
+      "managed": "Managed Transportation / 5PL"
+    }
+  }
+}

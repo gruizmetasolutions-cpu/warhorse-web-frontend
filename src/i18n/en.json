@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "security": "Security & Compliance",
+    "contact": "Contact",
+    "quote": "Quote Now"
+  },
+  "home": {
+    "hero_slogan": "With you every step of the way",
+    "hero_value": "Delivering more than freight. Delivering value.",
+    "hero_desc": "Operational solidity and risk mitigation in critical cross-border supply chains between the United States, Mexico, and Canada.",
+    "kpi_assets": "850+ Owned Assets",
+    "kpi_carriers": "500,000+ Carrier Network",
+    "kpi_countries": "Coverage in 3 Countries",
+    "kpi_ontime": "98%+ On-Time Delivery",
+    "kpi_clients": "100+ Corporate Clients",
+    "kpi_visibility": "24/7 Visibility"
+  },
+  "about": {
+    "title": "Corporate Structure",
+    "brokerage_title": "Warhorse Brokerage LLC",
+    "brokerage_desc": "Management unit and control tower for strategic freight coordination in the U.S. (Hub of the 5PL model).",
+    "transportation_title": "Warhorse Transportation LLC",
+    "transportation_desc": "FMCSA certified U.S. carrier located in El Paso, TX. Assets: 50+ tractors, 100+ dry vans, flatbeds, and service units.",
+    "logistics_title": "Warhorse Logistics de México",
+    "logistics_desc": "CTPAT certified Mexican carrier located in Cd. Juárez, CHIH. Assets: 150+ tractors, 250+ dry vans, 250+ reefers, private yard, and service units."
+  },
+  "services": {
+    "title": "Logistics & Specialized Services",
+    "logistics": "1PL-3PL Logistics: FTL, LTL, Intermodal (Road, Rail, Sea), Air, and Dedicated Fleets.",
+    "management": "4PL/5PL Strategy: 'Managed Transportation & Control Tower' via Warhorse Brokerage LLC for total supply chain management.",
+    "support": "24/7 Support, automated fuel systems, DOT certified maintenance, and direct on-site support."
+  },
+  "security": {
+    "title": "Security, Compliance & Risk Management",
+    "infrastructure": "24/7 Security, strict biometric access control, and advanced video surveillance.",
+    "human_capital": "Rigorous background checks and continuous technical training.",
+    "k9": "K9 unit available for high-value cargo.",
+    "inspection_title": "19-Point Inspection",
+    "inspection_desc": "Pre-departure inspection ensuring 'zero downtime' and unit physical integrity.",
+    "monitoring": "ISO 17712 Seals, state-of-the-art GPS tracking, and secure pre-determined routes."
+  },
+  "contact": {
+    "title": "Get a Quote",
+    "form_name": "Full Name",
+    "form_email": "Email Address",
+    "form_service": "Required Service",
+    "form_message": "Additional Details",
+    "submit": "Send Request",
+    "success": "Your request has been submitted successfully.",
+    "services_options": {
+      "ftl": "FTL (Full Truckload)",
+      "ltl": "LTL (Less Than Truckload)",
+      "special": "Special Project / Overdimensional",
+      "managed": "Managed Transportation / 5PL"
+    }
+  }
+}

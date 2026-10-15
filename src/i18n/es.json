@@ -12,24 +12,20 @@
   "home": {
     "badge": "Excelencia Logística Transfronteriza · EE. UU. · MX · CA",
     "title_main": "WARHORSE",
-    "title_sub": "LOGISTICS GROUP",
+    "hero_subtitle": "Soluciones de Transporte, Flete y Logística Personalizada",
     "hero_slogan": "Contigo en cada paso del camino",
     "hero_value": "Entregando más que carga. Entregando valor.",
-    "hero_desc": "Solidez operativa y mitigación de riesgos en cadenas de suministro críticas transfronterizas entre Estados Unidos, México y Canadá.",
-    "kpi_section_title": "Infraestructura & Capacidad Operativa",
-    "kpi_section_subtitle": "Métricas en tiempo real respaldadas por activos propios y una red continental interconectada.",
-    "kpi_assets": "850+ Activos Propios",
-    "kpi_assets_desc": "Control directo de flota propia",
-    "kpi_carriers": "500,000+ Transportistas",
-    "kpi_carriers_desc": "Red masiva certificada",
-    "kpi_countries": "3 Países Conectados",
-    "kpi_countries_desc": "EE. UU. · MX · CA interconectados",
-    "kpi_ontime": "98%+ Entregas a Tiempo",
-    "kpi_ontime_desc": "Tasa de ejecución confiable",
-    "kpi_clients": "100+ Clientes Corporativos",
-    "kpi_clients_desc": "Empresas Fortune 500 y líderes",
-    "kpi_visibility": "Visibilidad 24/7",
-    "kpi_visibility_desc": "Rastreo satelital en tiempo real"
+    "hero_support": "Logística confiable y segura en Estados Unidos, México y Canadá.",
+    "audience": {
+      "shipper_btn": "Soy Generador de Carga (Shipper)",
+      "carrier_btn": "Soy Transportista (Carrier)",
+      "new_customer_btn": "Soy Nuevo Cliente",
+      "track_load": "Rastrear Carga (Track a Load)",
+      "get_quote": "Cotizar Carga",
+      "book_load": "Reservar Carga (Book a Load)",
+      "become_carrier": "Registrarse como Carrier",
+      "personalized_quote": "Obtener Cotización Personalizada"
+    }
   },
   "about": {
     "title": "Estructura Corporativa",

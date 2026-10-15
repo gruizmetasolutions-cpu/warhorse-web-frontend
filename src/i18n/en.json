@@ -12,24 +12,20 @@
   "home": {
     "badge": "Cross-Border Logistics Excellence · US · MX · CA",
     "title_main": "WARHORSE",
-    "title_sub": "LOGISTICS GROUP",
+    "hero_subtitle": "Transportation, Freight Shipping & Customized Logistics Solutions",
     "hero_slogan": "With you every step of the way",
     "hero_value": "Delivering more than freight. Delivering value.",
-    "hero_desc": "Operational solidity and risk mitigation in critical cross-border supply chains between the United States, Mexico, and Canada.",
-    "kpi_section_title": "Infrastructure & Operational Capacity",
-    "kpi_section_subtitle": "Real-time metrics backed by proprietary assets and a continental cross-border network.",
-    "kpi_assets": "850+ Owned Assets",
-    "kpi_assets_desc": "Owned fleet direct control",
-    "kpi_carriers": "500,000+ Carrier Network",
-    "kpi_carriers_desc": "Massive certified network",
-    "kpi_countries": "3 Countries Covered",
-    "kpi_countries_desc": "US · MX · CA connected",
-    "kpi_ontime": "98%+ On-Time Delivery",
-    "kpi_ontime_desc": "Reliable execution rate",
-    "kpi_clients": "100+ Corporate Clients",
-    "kpi_clients_desc": "Fortune 500 & Enterprise",
-    "kpi_visibility": "24/7 Visibility",
-    "kpi_visibility_desc": "Real-time GPS tracking"
+    "hero_support": "Reliable, secure logistics across the United States, Mexico, and Canada.",
+    "audience": {
+      "shipper_btn": "I’m a Shipper",
+      "carrier_btn": "I’m a Carrier",
+      "new_customer_btn": "I’m a New Customer",
+      "track_load": "Track a Load",
+      "get_quote": "Get a Quote",
+      "book_load": "Book a Load",
+      "become_carrier": "Become a Carrier",
+      "personalized_quote": "Get a Personalized Quote"
+    }
   },
   "about": {
     "title": "Corporate Structure",

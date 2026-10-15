@@ -10,6 +10,7 @@ import { Resources } from './pages/Resources';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TrackLoad } from './pages/TrackLoad';
 import { BookLoad } from './pages/BookLoad';
+import { QuotePage } from './pages/QuotePage';
 import { StyleGuide } from './pages/StyleGuide';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="privacy" element={<PrivacyPolicy />} />
           <Route path="track" element={<TrackLoad />} />
           <Route path="book-load" element={<BookLoad />} />
+          <Route path="quote" element={<QuotePage />} />
           <Route path="styleguide" element={<StyleGuide />} />
         </Route>
       </Routes>

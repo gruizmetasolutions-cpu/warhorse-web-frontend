@@ -67,7 +67,7 @@ export const StickyNavbar: React.FC = () => {
           {i18n.language}
         </button>
 
-        <Link to="/contact">
+        <Link to="/quote">
           <Button variant="primary" className="text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5">
             {t('nav.quote')}
           </Button>

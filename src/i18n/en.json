@@ -164,5 +164,30 @@
     "rights": "© 2026 Warhorse. All rights reserved.",
     "category": "Cross-Border FTL · LTL · Specialized Transport",
     "privacy_notice": "Privacy Notice"
+  },
+  "track": {
+    "title": "Track Your Freight",
+    "desc_before_login": "Get a quick overview of your freight’s current status, or ",
+    "login_link": "log in",
+    "desc_after_login": " for full details on each load.",
+    "subtitle": "Track Freight Status",
+    "input_label": "Load Reference(s)",
+    "input_placeholder": "Enter PRO, BOL, or Reference numbers separated by commas (e.g. WH-1092, BOL-5541)",
+    "track_button": "Track Load",
+    "tracking": "Querying Samsara GPS Telemetry...",
+    "results_title": "Active Freight Telemetry",
+    "status_in_transit": "In Transit · On Schedule",
+    "origin": "Origin",
+    "destination": "Destination",
+    "carrier_network": "Fleet Asset",
+    "last_ping": "Last GPS Ping",
+    "samsara_portal_btn": "Open Full Tracking in Samsara Portal"
+  },
+  "book_load": {
+    "badge": "Strategy Live Load Board",
+    "title": "Book a Load — Coming Soon",
+    "desc": "Our online load board is under construction. In the meantime, contact our carrier team to book available loads.",
+    "contact_btn": "Contact Carrier Dispatch",
+    "back_home": "Back to Home"
   }
 }

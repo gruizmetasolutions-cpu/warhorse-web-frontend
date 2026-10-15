@@ -164,5 +164,30 @@
     "rights": "© 2026 Warhorse. All rights reserved.",
     "category": "FTL Transfronterizo · LTL · Transporte Especializado",
     "privacy_notice": "Aviso de Privacidad"
+  },
+  "track": {
+    "title": "Rastree su Carga",
+    "desc_before_login": "Obtenga una vista rápida del estado actual de su carga, o ",
+    "login_link": "inicie sesión",
+    "desc_after_login": " para ver todos los detalles de cada embarque.",
+    "subtitle": "Estado de Rastreo de Carga",
+    "input_label": "Referencia(s) de Carga",
+    "input_placeholder": "Ingrese números PRO, BOL o referencias separados por comas (ej. WH-1092, BOL-5541)",
+    "track_button": "Rastrear Carga",
+    "tracking": "Consultando telemetría GPS Samsara...",
+    "results_title": "Telemetría Activa de Carga",
+    "status_in_transit": "En Tránsito · A Tiempo",
+    "origin": "Origen",
+    "destination": "Destino",
+    "carrier_network": "Activo de Flota",
+    "last_ping": "Último Reporte GPS",
+    "samsara_portal_btn": "Abrir Rastreo Completo en Portal Samsara"
+  },
+  "book_load": {
+    "badge": "Tablero de Cargas Strategy Live",
+    "title": "Book a Load — Coming Soon",
+    "desc": "Our online load board is under construction. In the meantime, contact our carrier team to book available loads.",
+    "contact_btn": "Contactar Despacho de Transportistas",
+    "back_home": "Volver al Inicio"
   }
 }

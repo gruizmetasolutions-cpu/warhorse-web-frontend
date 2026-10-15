@@ -4,30 +4,24 @@ import { GlassCard } from '../components/ui/GlassCard';
 import { ShieldCheck, Lock, UserCheck, Eye, Dog, CheckCircle2, AlertTriangle } from 'lucide-react';
 
 export const Security: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [hover19, setHover19] = useState(false);
 
-  const points19 = [
-    "Parachoques delantero y parrilla", "Llantas y rines frontales", "Quinta rueda y perno rey",
-    "Motor e inspección de fluidos", "Tanques de combustible y sellos", "Cabina y compartimento de conductor",
-    "Puertas laterales y seguros", "Chasis y rieles de bastidor", "Tanques de aire y frenos",
-    "Piso de la caja secadora", "Paredes laterales interiores", "Puertas traseras y mecanismos de bloqueo",
-    "Techo y sellado exterior", "Unidad de refrigeración (Reefer)", "Sistemas GPS e itinerario",
-    "Sellos de seguridad ISO 17712", "Inspección inferior de chasis", "Luces y refrenado eléctrico", "Unidad K9 y escaneo biológico"
-  ];
+  const points19 = (t('security.points', { returnObjects: true }) as string[]) || [];
 
   return (
     <div className="w-full max-w-7xl mx-auto px-6 py-8 flex flex-col gap-10">
       
       <div className="flex flex-col gap-3">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-300 text-emerald-800 text-xs font-semibold w-fit">
-          <ShieldCheck size={14} /> CTPAT & FMCSA Blindaje Operativo
+          <ShieldCheck size={14} /> {t('security.badge')}
         </div>
         <h1 className="text-3xl md:text-5xl font-black text-[#1A1A1A]">
-          Seguridad & <span className="underline decoration-[#1A1A1A]/30 underline-offset-8">Cumplimiento Operativo</span>
+          {t('security.title')}{' '}
+          <span className="underline decoration-[#1A1A1A]/30 underline-offset-8">{t('security.title_highlight')}</span>
         </h1>
         <p className="text-[#595959] max-w-3xl text-base">
-          Protocolos de alta seguridad diseñados para blindar su carga en cada trayecto transfronterizo.
+          {t('security.subtitle')}
         </p>
       </div>
 
@@ -38,7 +32,7 @@ export const Security: React.FC = () => {
           <div className="w-10 h-10 rounded-xl bg-[#F5F5F5] border border-gray-200 flex items-center justify-center text-[#1A1A1A]">
             <Lock size={20} />
           </div>
-          <h3 className="text-lg font-bold text-[#1A1A1A]">Infraestructura Blindada</h3>
+          <h3 className="text-lg font-bold text-[#1A1A1A]">{t('security.infra_title')}</h3>
           <p className="text-sm text-[#595959]">
             {t('security.infrastructure')}
           </p>
@@ -48,7 +42,7 @@ export const Security: React.FC = () => {
           <div className="w-10 h-10 rounded-xl bg-[#F5F5F5] border border-gray-200 flex items-center justify-center text-[#1A1A1A]">
             <UserCheck size={20} />
           </div>
-          <h3 className="text-lg font-bold text-[#1A1A1A]">Capital Humano Verificado</h3>
+          <h3 className="text-lg font-bold text-[#1A1A1A]">{t('security.human_title')}</h3>
           <p className="text-sm text-[#595959]">
             {t('security.human_capital')}
           </p>
@@ -58,7 +52,7 @@ export const Security: React.FC = () => {
           <div className="w-10 h-10 rounded-xl bg-[#F5F5F5] border border-gray-200 flex items-center justify-center text-[#1A1A1A]">
             <Eye size={20} />
           </div>
-          <h3 className="text-lg font-bold text-[#1A1A1A]">Monitoreo & Sellos ISO</h3>
+          <h3 className="text-lg font-bold text-[#1A1A1A]">{t('security.monitoring_title')}</h3>
           <p className="text-sm text-[#595959]">
             {t('security.monitoring')}
           </p>
@@ -77,15 +71,15 @@ export const Security: React.FC = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
               <span className="text-xs font-bold text-white flex items-center gap-1">
-                <Dog size={14} /> Unidad Canina K9
+                <Dog size={14} /> {t('security.k9_title')}
               </span>
             </div>
           </div>
 
           <div className="w-full md:w-2/3 flex flex-col gap-4">
-            <h2 className="text-2xl font-bold text-[#1A1A1A]">Diferenciador Técnico: Inspección K9 Especializada</h2>
+            <h2 className="text-2xl font-bold text-[#1A1A1A]">{t('security.k9_title')}</h2>
             <p className="text-sm text-[#595959] leading-relaxed">
-              Para cargas de alto valor y cruces fronterizos de máxima prioridad, Warhorse despliega unidades K9 capacitadas en la detección de narcóticos y contrabando, garantizando el cumplimiento estricto con la CTPAT y la aduana estadounidense.
+              {t('security.k9')}
             </p>
           </div>
         </div>
@@ -109,7 +103,9 @@ export const Security: React.FC = () => {
               </div>
             </div>
             <span className="text-xs text-[#1A1A1A] font-semibold hidden sm:block">
-              {hover19 ? 'Desglose Activo' : 'Pasa el cursor para ver los 19 puntos'}
+              {hover19 
+                ? (i18n.language === 'es' ? 'Desglose Activo' : 'Active Breakdown') 
+                : (i18n.language === 'es' ? 'Pasa el cursor para ver los 19 puntos' : 'Hover to inspect 19 points')}
             </span>
           </div>
 
@@ -125,7 +121,11 @@ export const Security: React.FC = () => {
           ) : (
             <div className="py-8 flex flex-col items-center justify-center gap-2 text-center text-[#595959]">
               <AlertTriangle size={24} className="text-[#1A1A1A] animate-bounce" />
-              <span className="text-sm font-semibold uppercase tracking-wider text-[#1A1A1A]">Pasa el cursor sobre la tarjeta para inspeccionar los 19 puntos de verificación pre-salida</span>
+              <span className="text-sm font-semibold uppercase tracking-wider text-[#1A1A1A]">
+                {i18n.language === 'es' 
+                  ? 'Pasa el cursor sobre la tarjeta para inspeccionar los 19 puntos de verificación pre-salida' 
+                  : 'Hover over card to inspect all 19 CTPAT pre-departure verification checkpoints'}
+              </span>
             </div>
           )}
         </GlassCard>

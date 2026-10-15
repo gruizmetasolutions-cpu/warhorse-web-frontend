@@ -9,12 +9,12 @@ export const Home: React.FC = () => {
   const { t } = useTranslation();
 
   const kpis = [
-    { label: t('home.kpi_assets'), value: '850+', icon: Truck, desc: 'Owned fleet direct control' },
-    { label: t('home.kpi_carriers'), value: '500,000+', icon: Network, desc: 'Massive certified network' },
-    { label: t('home.kpi_countries'), value: '3 Países', icon: Globe, desc: 'US · MX · CA connected' },
-    { label: t('home.kpi_ontime'), value: '98%+', icon: Clock, desc: 'Reliable execution rate' },
-    { label: t('home.kpi_clients'), value: '100+', icon: Users, desc: 'Fortune 500 & Enterprise' },
-    { label: t('home.kpi_visibility'), value: '24/7', icon: Eye, desc: 'Real-time GPS tracking' },
+    { label: t('home.kpi_assets'), value: '850+', icon: Truck, desc: t('home.kpi_assets_desc') },
+    { label: t('home.kpi_carriers'), value: '500,000+', icon: Network, desc: t('home.kpi_carriers_desc') },
+    { label: t('home.kpi_countries'), value: '3', icon: Globe, desc: t('home.kpi_countries_desc') },
+    { label: t('home.kpi_ontime'), value: '98%+', icon: Clock, desc: t('home.kpi_ontime_desc') },
+    { label: t('home.kpi_clients'), value: '100+', icon: Users, desc: t('home.kpi_clients_desc') },
+    { label: t('home.kpi_visibility'), value: '24/7', icon: Eye, desc: t('home.kpi_visibility_desc') },
   ];
 
   return (
@@ -35,7 +35,7 @@ export const Home: React.FC = () => {
           
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gray-100 border border-gray-300 text-[#1A1A1A] text-xs font-bold uppercase tracking-widest backdrop-blur-md">
             <ShieldCheck size={16} className="text-[#1A1A1A]" />
-            Cross-Border Logistics Excellence · US · MX · CA
+            {t('home.badge')}
           </div>
 
           {/* PROTAGONIST LOGO (DES-03: Blanco y negro corporativo sobre fondo blanco) */}
@@ -84,8 +84,8 @@ export const Home: React.FC = () => {
       {/* KPI Bento Grid (DES-01: Fondo blanco y gris alterno con tipografía WCAG AA) */}
       <section className="flex flex-col gap-6 py-4">
         <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-bold text-[#1A1A1A] tracking-tight">Infraestructura & Capacidad Operativa</h2>
-          <p className="text-[#595959] text-sm">Métricas en tiempo real respaldadas por flotas propias y red transfronteriza.</p>
+          <h2 className="text-2xl font-bold text-[#1A1A1A] tracking-tight">{t('home.kpi_section_title')}</h2>
+          <p className="text-[#595959] text-sm">{t('home.kpi_section_subtitle')}</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

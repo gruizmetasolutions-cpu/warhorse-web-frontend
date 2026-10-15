@@ -32,6 +32,7 @@ export const Footer: React.FC = () => {
           <Link to="/services" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.services')}</Link>
           <Link to="/security" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.security')}</Link>
           <Link to="/contact" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.contact')}</Link>
+          <Link to="/carrier" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.carrier_packet')}</Link>
           <Link to="/apply" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.apply')}</Link>
           <Link to="/resources" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.resources')}</Link>
           <Link to="/privacy" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors font-medium">{t('footer.privacy_notice')}</Link>

@@ -7,7 +7,8 @@
     "contact": "Contáctanos",
     "apply": "Aplica Hoy",
     "resources": "Recursos",
-    "quote": "Cotizar Ahora"
+    "quote": "Cotizar Ahora",
+    "carrier_packet": "Paquete de Transportista"
   },
   "home": {
     "badge": "Excelencia Logística Transfronteriza · EE. UU. · MX · CA",
@@ -46,7 +47,32 @@
     "logistics_badge": "Cd. Juárez, CHIH",
     "logistics_title": "Warhorse Logistics de México",
     "logistics_desc": "Carrier mexicano certificado por CTPAT en Cd. Juárez, CHIH. Activos: 150+ tractores, 250+ cajas secas, 250+ reefers, patio privado y talleres en sitio.",
-    "logistics_footer": "Certificado CTPAT (Carrier Mexicano)"
+    "logistics_footer": "Certificado CTPAT (Carrier Mexicano)",
+    "about_warhorse_title": "Acerca de Warhorse",
+    "about_warhorse_text": "Warhorse es una empresa líder en transporte y logística trinacional basada en activos propios. Conectando Estados Unidos, México y Canadá, brindamos máxima velocidad transfronteriza, integridad institucional y confiabilidad moderna de flota en los corredores comerciales más críticos.",
+    "mission_title": "Nuestra Misión",
+    "mission_text": "Potenciar las cadenas de suministro corporativas de Norteamérica mediante excelencia operativa incansable, estricto cumplimiento de seguridad, telemetría satelital avanzada y soluciones logísticas personalizadas.",
+    "values_title": "Valores Fundamentales: Servicio, Integridad y Confiabilidad",
+    "values_text": "Cumplimos nuestros compromisos con total transparencia operativa, rigurosos estándares éticos y dedicación absoluta a los operadores y la carga que mueven el comercio internacional.",
+    "structure_title": "Estructura Corporativa y Entidades Operativas",
+    "structure_subtitle": "Tres entidades especializadas que operan bajo un estándar unificado de excelencia.",
+    "scope_title": "Alcance Operativo y Modalidades de Equipo",
+    "scope_text": "Versatilidad integral de equipo configurada para cumplir exactamente con sus especificaciones de manufactura y carga:",
+    "scope_dryvan": "Cajas Secas 53' (Dry Van)",
+    "scope_dryvan_desc": "Cajas secas de 53 pies con suspensión de aire para insumos industriales, automotrices y retail.",
+    "scope_flatbed": "Plataformas y Step Deck (Flatbed)",
+    "scope_flatbed_desc": "Transporte de plataforma abierta para acero, maquinaria pesada y carga sobredimensionada.",
+    "scope_reefer": "Refrigerados (Cadena de Frío)",
+    "scope_reefer_desc": "Monitoreo telemático continuo de temperatura para perecederos, farmacéuticos y químicos.",
+    "scope_specialized": "Especializado y Expeditado",
+    "scope_specialized_desc": "Equipos de doble chofer para tránsito crítico, tránsitos fiscales in-bond y cruce fronterizo veloz.",
+    "fleet_title": "Activos de Flota y Presencia Física",
+    "fleet_us_title": "100+ Tractores Propios (EE. UU.)",
+    "fleet_us_desc": "Flota interestatal basada en El Paso, TX y Santa Teresa, NM.",
+    "fleet_mx_title": "200+ Tractores Propios (Cd. Juárez)",
+    "fleet_mx_desc": "Flota de cruce transfronterizo, transfers y fletes nacionales en Cd. Juárez, CHIH.",
+    "fleet_net_title": "1,000+ Red Extendida de Carriers",
+    "fleet_net_desc": "Capacidad verificada y certificada en toda la red de EE. UU., México y Canadá."
   },
   "services": {
     "title": "Portafolio de",
@@ -75,7 +101,71 @@
     "dot_desc": "Unidades de servicio mecánico y sanitización continua.",
     "cta_button": "Solicitar Cotización de Servicio",
     "cta_quote": "Solicitar Cotización",
-    "cta_contact": "Contactar a un Especialista"
+    "cta_contact": "Contactar a un Especialista",
+    "logistics_title_main": "Servicios Logísticos",
+    "logistics_subtitle_main": "Soluciones centrales de carga y flota basadas en activos diseñadas para velocidad y cruce fronterizo seguro.",
+    "specialized_title_main": "Servicios Especializados",
+    "specialized_subtitle_main": "Configuraciones logísticas de alta ingeniería para carga compleja, sobredimensionada o crítica.",
+    "logistics_7": [
+      {
+        "title": "Cruce Fronterizo Drayage y Transfer",
+        "desc": "Cruces internacionales continuos en los puentes de El Paso, Santa Teresa y Cd. Juárez con transfers dedicados."
+      },
+      {
+        "title": "Carga Completa Larga Distancia (FTL)",
+        "desc": "Transporte directo punto a punto a nivel nacional e interestatal en todo Estados Unidos y México."
+      },
+      {
+        "title": "Tránsito Expeditado con Doble Chofer",
+        "desc": "Equipos de dos operadores en cabina para servicio continuo sin paradas en envíos just-in-time y críticos."
+      },
+      {
+        "title": "Operaciones de Flota Dedicada",
+        "desc": "Tractores y remolques asignados contractualmente de manera exclusiva al calendario de su planta."
+      },
+      {
+        "title": "Gestión de Patios y Movimientos Internos",
+        "desc": "Maniobras de patio (hostler), drop-and-hook ágil y resguardo seguro en instalaciones de manufactura."
+      },
+      {
+        "title": "Almacenaje y Transbordo (Transload)",
+        "desc": "Cross-docking, consolidación, almacenaje temporal y transbordo seguro en nodos fronterizos binacionales."
+      },
+      {
+        "title": "Telemetría Satelital Samsara en Tiempo Real",
+        "desc": "Visibilidad total de activos, geocercas inteligentes, bitácoras electrónicas y monitoreo térmico en cada trayecto."
+      }
+    ],
+    "specialized_7": [
+      {
+        "title": "Carga Pesada y Sobredimensionada",
+        "desc": "Permisos especiales, unidades escolta certificadas y remolques multieje para maquinaria pesada."
+      },
+      {
+        "title": "Transporte en Plataforma y Step Deck",
+        "desc": "Transporte en cama abierta para perfiles de acero, materiales de construcción y piezas de gran volumen."
+      },
+      {
+        "title": "Caja Refrigerada y Cadena de Frío",
+        "desc": "Unidades de refrigeración de última generación con registro digital ininterrumpido para perecederos y fármacos."
+      },
+      {
+        "title": "Transporte de Materiales Peligrosos (Hazmat)",
+        "desc": "Manejo y transporte certificado de sustancias peligrosas cumpliendo normativas DOT, EPA y SCT."
+      },
+      {
+        "title": "Embarques Fiscales (In-Bond)",
+        "desc": "Tránsitos aduanales in-bond que permiten mover mercancías importadas sin pago previo de aranceles hacia recintos fiscales."
+      },
+      {
+        "title": "Custodia y Carga de Alto Valor",
+        "desc": "Protocolos reforzados de seguridad, doble localizador satelital, botones de pánico y escolta dedicada."
+      },
+      {
+        "title": "Ingeniería Logística Personalizada",
+        "desc": "Modelado de cadena de suministro, optimización de rutas y diseño a la medida para maquiladoras y corporativos."
+      }
+    ]
   },
   "security": {
     "badge": "CTPAT & FMCSA Blindaje Operativo",
@@ -114,6 +204,55 @@
       "Parte inferior del chasis",
       "Luces direccionales y de freno",
       "Inspección K9 y escaneo biológico"
+    ],
+    "ctpat_intro_title": "Certificación CTPAT y Blindaje de Seguridad Bilateral",
+    "ctpat_intro_text": "Como empresa certificada CTPAT en estrecha coordinación con la Oficina de Aduanas y Protección Fronteriza de EE. UU. (CBP) y las autoridades aduaneras de México, Warhorse aplica protocolos de seguridad multicapa. Cada conductor, tractor, caja y patio opera bajo rigurosos estándares de custodia verificables y auditables.",
+    "points_11_title": "11 Estándares Centrales de Seguridad y Cumplimiento",
+    "points_11": [
+      {
+        "title": "Inspección CTPAT de 17 Puntos en Tracto y Remolque",
+        "desc": "Verificación física y mecánica obligatoria que examina parachoques, motor, llantas, piso, techo, quinta rueda y chasis antes de cada cruce internacional."
+      },
+      {
+        "title": "Sellos de Alta Seguridad ISO 17712",
+        "desc": "Sellos de perno inviolables y serializados, verificados y fotografiados en origen, aduana y destino."
+      },
+      {
+        "title": "Rastreo Satelital GPS 24/7 y Telemetría",
+        "desc": "Monitoreo ininterrumpido en tiempo real mediante Samsara con alarmas inmediatas por apertura de puertas o paradas no autorizadas."
+      },
+      {
+        "title": "Operadores Certificados y Antidoping Continuo",
+        "desc": "Auditoría de 10 años de historial laboral, cartas de no antecedentes, validación biométrica y pruebas toxicológicas aleatorias."
+      },
+      {
+        "title": "Corredores Transfronterizos con Geocercas",
+        "desc": "Rutas autorizadas obligatorias con paraderos seguros predefinidos y activación inmediata de alarma por desvío de ruta."
+      },
+      {
+        "title": "Seguridad Perimetral y CCTV en Patios",
+        "desc": "Patios cerrados con cerca de alta seguridad, iluminación LED de amplio alcance y vigilancia por cámaras de alta resolución 24/7."
+      },
+      {
+        "title": "Protocolo de Doble Firma en Sellos",
+        "desc": "Inspección cruzada entre personal de seguridad y chofer, con archivo fotográfico y registro digital obligatorio."
+      },
+      {
+        "title": "Enlace Inmediato de Respuesta a Emergencias",
+        "desc": "Canal directo de comunicación con corporaciones de seguridad pública, Guardia Nacional y autoridades aduanales."
+      },
+      {
+        "title": "Certificación para Carriles FAST de CBP",
+        "desc": "Calificación formal para transitar por carriles expeditados FAST (Free and Secure Trade) en cruces comerciales."
+      },
+      {
+        "title": "Cumplimiento Regulatorio Bilateral (FMCSA / SCT)",
+        "desc": "Apego total a los lineamientos de seguridad de la FMCSA (US DOT) y de la Secretaría de Infraestructura, Comunicaciones y Transportes (SCT)."
+      },
+      {
+        "title": "Control de Acceso Biométrico y Electrónico",
+        "desc": "Registros automatizados y cerraduras electrónicas para impedir cualquier acceso no autorizado a tractocamiones y terminales."
+      }
     ]
   },
   "contact": {
@@ -151,7 +290,17 @@
       "ltl": "LTL (Carga Consolidada)",
       "special": "Proyecto Especial / Sobredimensionado",
       "managed": "Managed Transportation / 5PL"
-    }
+    },
+    "binational_title": "Directorio Departamental Binacional",
+    "binational_desc": "Canales de contacto directo para operaciones, seguridad, cumplimiento, cotizaciones y RH en EE. UU. y México.",
+    "us_group": "Estados Unidos",
+    "mx_group": "México",
+    "dept_ctpat_us": "CTPAT Compliance & Security",
+    "dept_quotes_us": "Quotes & Billing",
+    "dept_hr_us": "Human Resources",
+    "dept_ctpat_mx": "Seguridad y Cumplimiento CTPAT",
+    "dept_quotes_mx": "Cotizaciones y Cobranza",
+    "dept_hr_mx": "Recursos Humanos"
   },
   "footer": {
     "tagline": "\"La seguridad nos guía. El cumplimiento nos define. Su éxito nos mueve hacia adelante.\"",
@@ -231,5 +380,102 @@
     "date_required": "Por favor seleccione una fecha válida para la recolección.",
     "location_required": "Por favor ingrese las ubicaciones de recolección y entrega.",
     "needs_required": "Por favor describa sus requerimientos de transporte."
+  },
+  "carrier_page": {
+    "badge": "Red de Transportistas",
+    "title": "Únete a la Red de Carriers Warhorse",
+    "subtitle": "Forma parte de nuestra red de transportistas asociados. Accede a volumen constante de carga, esquemas de pago confiables y respaldo bilingüe 24/7.",
+    "packet_block_title": "Paquete de Transportista (Carrier Packet)",
+    "packet_block_desc": "Toda la documentación necesaria para darte de alta y comenzar a cargar de inmediato.",
+    "why_haul_title": "¿Por qué transportar con Warhorse?",
+    "bullet_1_title": "Programa Fuel Advance",
+    "bullet_1_desc": "Anticipo de combustible al cargar para mantener tus tractocamiones en movimiento sin contratiempos.",
+    "bullet_2_title": "Programa Quick Pay",
+    "bullet_2_desc": "Pagos rápidos en 24 a 48 horas con tarifas transparentes y sin deducciones sorpresa.",
+    "bullet_3_title": "Pago Estándar a 30 Días",
+    "bullet_3_desc": "Liquidaciones puntuales garantizadas a 30 días mediante transferencia bancaria directa.",
+    "bullet_4_title": "Rutas Fijas y Carga Continua",
+    "bullet_4_desc": "Volumen constante todo el año en cajas secas, plataformas y reefers conectando los principales centros industriales de EE. UU. y México.",
+    "bullet_5_title": "Despacho y Soporte Bilingüe 24/7",
+    "bullet_5_desc": "Atención personalizada las 24 horas para asistirte en cruces fronterizos, citas aduanales y monitoreo continuo.",
+    "form_title": "Solicitar Paquete de Transportista",
+    "form_subtitle": "Completa los datos de tu empresa y nuestro equipo te enviará el paquete oficial de alta a la brevedad.",
+    "usdot_or_sct": "Número USDOT o Número de Permiso SCT",
+    "usdot_or_sct_placeholder": "Ej. USDOT 3849120 o SCT 10294812",
+    "carrier_name": "Razón Social / Nombre del Carrier",
+    "carrier_name_placeholder": "Nombre de la Empresa Transportista",
+    "state_province": "Estado / Provincia",
+    "state_province_placeholder": "Ej. Chihuahua, Nuevo León, Texas, New Mexico",
+    "contact_name": "Nombre de Contacto",
+    "contact_name_placeholder": "Nombre y Apellidos",
+    "email": "Correo Electrónico de Despacho",
+    "email_placeholder": "despacho@tucarrier.com",
+    "phone": "Teléfono de Contacto",
+    "phone_placeholder": "+52 (656) 000-0000 o +1 (555) 000-0000",
+    "notes": "¿Algo más que debamos saber? (Opcional)",
+    "notes_placeholder": "Indica cantidad de unidades (Cajas Secas, Plataformas, Reefers), rutas de preferencia o si cuentas con CTPAT...",
+    "submit_btn": "Solicitar Paquete de Transportista",
+    "submitting": "Enviando Solicitud...",
+    "success_title": "¡Solicitud Recibida con Éxito!",
+    "success_desc": "Muchas gracias. Tu solicitud ha sido canalizada al área de atención a transportistas en helpdesk@warhorsebrokerage.com. En breve recibirás el paquete de contratación.",
+    "validation_required": "Este campo es obligatorio.",
+    "validation_email": "Ingresa un correo electrónico válido.",
+    "validation_phone": "Ingresa un teléfono válido a 10 dígitos."
+  },
+  "resources_page": {
+    "live_badge": "Portal En Línea",
+    "coming_soon_badge": "Próximamente",
+    "portal_admin_title": "Warhorse Admin Hub",
+    "portal_admin_desc": "Portal corporativo centralizado para administración, control operativo de despachos y auditoría interna.",
+    "portal_driver_title": "Warhorse Driver Hub",
+    "portal_driver_desc": "Plataforma digital para operadores de tractocamión, visualización de viajes y carga de comprobantes.",
+    "portal_samsara_title": "Samsara Cloud Telematics",
+    "portal_samsara_desc": "Monitoreo telemático satelital GPS, diagnóstico mecánico, cámaras de seguridad y cadena de frío en vivo.",
+    "portal_genesis_title": "Génesis TMS",
+    "portal_genesis_desc": "Sistema de gestión de transporte oficial para facturación, manifiestos de cruce y timbrado de viajes.",
+    "portal_strategy_title": "Strategy Live (Legacy)",
+    "portal_strategy_desc": "Portal legacy de consulta para historial de viajes, tarifas archivadas y registros históricos.",
+    "portal_transp_hub_title": "Warhorse Transportation Hub",
+    "portal_transp_hub_desc": "Plataforma integrada de nueva generación para gestión integral de embarques y clientes corporativos.",
+    "portal_clockin_title": "Warhorse Driver Clock-In Hub",
+    "portal_clockin_desc": "Registro digital y biométrico de jornadas laborales para operadores locales, patio y carretera.",
+    "open_portal": "Ingresar al Portal",
+    "disabled_notice": "En Desarrollo"
+  },
+  "apply_wizard": {
+    "badge": "Bolsa de Trabajo y Carreras",
+    "title": "Aplica Hoy — Únete a Warhorse",
+    "subtitle": "Inicia tu trayectoria en la red logística transfronteriza líder en Norteamérica. Completa el formulario de 4 pasos a continuación.",
+    "step_1_title": "Paso 1: Información de Contacto",
+    "step_2_title": "Paso 2: Información de Operador",
+    "step_3_title": "Paso 3: CV e Información Adicional",
+    "step_4_title": "Paso 4: Consentimiento y Envío",
+    "step_of": "Paso {{current}} de {{total}}",
+    "full_name": "Nombre Completo",
+    "phone": "Teléfono de Contacto",
+    "sms_consent": "Acepto recibir mensajes de texto (SMS / WhatsApp) sobre el estatus de mi solicitud.",
+    "email": "Correo Electrónico",
+    "city_state": "Ciudad / Estado",
+    "position": "Puesto de Interés",
+    "location": "Ubicación / Base de Interés",
+    "pref_lang": "Idioma de Preferencia",
+    "license_type": "Tipo de Licencia de Conducir",
+    "driving_exp": "Años de Experiencia como Conductor Comercial",
+    "cross_border_creds": "Credenciales Transfronterizas (Opcional)",
+    "endorsements": "Endosos / Certificaciones (Opcional)",
+    "route_type": "Tipo de Ruta de Preferencia (Elige al menos una)",
+    "resume_file": "Adjuntar Currículum o Foto de Solicitud (Opcional, hasta 10 MB)",
+    "resume_hint": "Formatos permitidos: PDF, DOC, DOCX, JPG, PNG. Se admiten fotos claras de solicitudes en papel.",
+    "anything_else": "¿Algo más que debamos saber? (Opcional)",
+    "consent_checkbox": "Acepto ser contactado por Warhorse respecto a oportunidades de empleo vía llamada, SMS o correo.",
+    "privacy_link": "Consultar Aviso de Privacidad",
+    "submit_btn": "Enviar Solicitud",
+    "submitting": "Enviando Solicitud...",
+    "next_btn": "Continuar al Siguiente Paso",
+    "prev_btn": "Regresar",
+    "success_title": "¡Solicitud Enviada con Éxito!",
+    "success_desc": "¡Gracias por postularte a Warhorse! Tu solicitud ha sido enrutada directamente al área de reclutamiento en {{email}}.",
+    "application_id": "Folio de Solicitud:",
+    "apply_another": "Enviar Otra Solicitud"
   }
 }

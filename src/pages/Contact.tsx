@@ -181,44 +181,79 @@ export const Contact: React.FC = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
-        {/* Left Column: Direct Directory Bento Card */}
+        {/* Left Column: Direct Binational Directory Bento Card */}
         <GlassCard className="flex flex-col justify-between gap-6 p-8 bg-white border border-gray-200">
           <div className="flex flex-col gap-6">
-            <h2 className="text-xl font-bold text-[#1A1A1A] flex items-center gap-2">
-              <Shield className="text-[#1A1A1A]" size={20} />
-              {t('contact.directory_title')}
-            </h2>
+            <div>
+              <h2 className="text-xl font-bold text-[#1A1A1A] flex items-center gap-2">
+                <Shield className="text-[#1A1A1A]" size={20} />
+                {t('contact.binational_title')}
+              </h2>
+              <p className="text-xs text-[#595959] mt-1">
+                {t('contact.binational_desc')}
+              </p>
+            </div>
 
-            <div className="flex flex-col gap-4 text-xs">
-              <div className="p-3.5 rounded-xl bg-[#F5F5F5] border border-gray-200 flex flex-col gap-1">
-                <span className="font-bold text-[#1A1A1A] uppercase tracking-wider text-[10px]">
-                  {t('contact.general_inquiries')}
-                </span>
-                <a href="mailto:helpdesk@warhorsebrokerage.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">
-                  helpdesk@warhorsebrokerage.com
-                </a>
+            <div className="flex flex-col gap-5 text-xs">
+              
+              {/* United States Group */}
+              <div className="flex flex-col gap-2 p-4 rounded-2xl bg-[#F8FAFC] border border-gray-200">
+                <div className="flex items-center gap-2 font-bold text-[#1A1A1A] text-xs uppercase tracking-wider pb-1 border-b border-gray-200">
+                  <span className="w-2 h-2 rounded-full bg-blue-600"></span>
+                  {t('contact.us_group')}
+                </div>
+                
+                <div className="flex flex-col gap-1 pt-1">
+                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_ctpat_us')}</span>
+                  <a href="mailto:safetyandcompliance@warhorsebrokerage.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    safetyandcompliance@warhorsebrokerage.com
+                  </a>
+                </div>
+
+                <div className="flex flex-col gap-1 pt-1">
+                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_quotes_us')}</span>
+                  <a href="mailto:quotes@warhorsebrokerage.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    quotes@warhorsebrokerage.com
+                  </a>
+                </div>
+
+                <div className="flex flex-col gap-1 pt-1">
+                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_hr_us')}</span>
+                  <a href="mailto:rh@warhorsebrokerage.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    rh@warhorsebrokerage.com
+                  </a>
+                </div>
               </div>
 
-              <div className="p-3.5 rounded-xl bg-[#F5F5F5] border border-gray-200 flex flex-col gap-1">
-                <span className="font-bold text-[#1A1A1A] uppercase tracking-wider text-[10px]">
-                  {t('contact.sales_quotes')}
-                </span>
-                <a href="mailto:quotes@warhorsebrokerage.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">
-                  quotes@warhorsebrokerage.com
-                </a>
-                <a href="mailto:cotizaciones@warhorsemexico.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">
-                  cotizaciones@warhorsemexico.com
-                </a>
+              {/* Mexico Group */}
+              <div className="flex flex-col gap-2 p-4 rounded-2xl bg-[#F8FAFC] border border-gray-200">
+                <div className="flex items-center gap-2 font-bold text-[#1A1A1A] text-xs uppercase tracking-wider pb-1 border-b border-gray-200">
+                  <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+                  {t('contact.mx_group')}
+                </div>
+                
+                <div className="flex flex-col gap-1 pt-1">
+                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_ctpat_mx')}</span>
+                  <a href="mailto:seguridad_mx@warhorsemexico.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    seguridad_mx@warhorsemexico.com
+                  </a>
+                </div>
+
+                <div className="flex flex-col gap-1 pt-1">
+                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_quotes_mx')}</span>
+                  <a href="mailto:cotizaciones@warhorsemexico.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    cotizaciones@warhorsemexico.com
+                  </a>
+                </div>
+
+                <div className="flex flex-col gap-1 pt-1">
+                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_hr_mx')}</span>
+                  <a href="mailto:rh_mx@warhorsemexico.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    rh_mx@warhorsemexico.com
+                  </a>
+                </div>
               </div>
 
-              <div className="p-3.5 rounded-xl bg-[#F5F5F5] border border-gray-200 flex flex-col gap-1">
-                <span className="font-bold text-[#1A1A1A] uppercase tracking-wider text-[10px]">
-                  {t('contact.safety_compliance')}
-                </span>
-                <a href="mailto:safetyandcompliance@warhorsebrokerage.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">
-                  safetyandcompliance@warhorsebrokerage.com
-                </a>
-              </div>
             </div>
           </div>
 

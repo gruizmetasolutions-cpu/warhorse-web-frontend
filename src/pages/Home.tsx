@@ -159,7 +159,7 @@ export const Home: React.FC = () => {
                   </a>
 
                   <a
-                    href="/apply"
+                    href="/carrier"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between p-3 rounded-xl hover:bg-[#F5F5F5] transition-colors text-sm font-semibold text-[#1A1A1A] group"

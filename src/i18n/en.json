@@ -7,7 +7,8 @@
     "contact": "Contact Us",
     "apply": "Apply Today",
     "resources": "Resources",
-    "quote": "Quote Now"
+    "quote": "Quote Now",
+    "carrier_packet": "Carrier Packet"
   },
   "home": {
     "badge": "Cross-Border Logistics Excellence · US · MX · CA",
@@ -46,7 +47,32 @@
     "logistics_badge": "Cd. Juárez, CHIH",
     "logistics_title": "Warhorse Logistics de México",
     "logistics_desc": "CTPAT certified Mexican carrier located in Cd. Juárez, CHIH. Assets: 150+ tractors, 250+ dry vans, 250+ reefers, private secure yard, and maintenance units.",
-    "logistics_footer": "CTPAT Certified (Mexican Carrier)"
+    "logistics_footer": "CTPAT Certified (Mexican Carrier)",
+    "about_warhorse_title": "About Warhorse",
+    "about_warhorse_text": "Warhorse is a premier trinational asset-based transportation and logistics enterprise. Bridging the United States, Mexico, and Canada, we deliver unmatched cross-border velocity, institutional integrity, and modern fleet reliability across critical trade corridors.",
+    "mission_title": "Our Mission",
+    "mission_text": "To empower North American enterprise supply chains through relentless operational excellence, proactive safety compliance, cutting-edge telematics, and personalized logistics engineering.",
+    "values_title": "Core Values: Service, Integrity & Reliability",
+    "values_text": "We honor our commitments with complete operational transparency, strict ethical standards, and unwavering dedication to the drivers and cargo that move global commerce forward.",
+    "structure_title": "Corporate Structure & Operating Entities",
+    "structure_subtitle": "Three specialized entities operating under a unified standard of excellence.",
+    "scope_title": "Operational Scope & Equipment Modes",
+    "scope_text": "Integrated equipment versatility configured to match your manufacturing and freight specifications:",
+    "scope_dryvan": "53' High-Cube Dry Vans",
+    "scope_dryvan_desc": "Clean, air-ride enclosed trailers for manufacturing, automotive, and retail cargo.",
+    "scope_flatbed": "Flatbed & Step Deck",
+    "scope_flatbed_desc": "Open-deck heavy transport for steel, industrial machinery, and oversized freight.",
+    "scope_reefer": "Refrigerated (Temp-Controlled)",
+    "scope_reefer_desc": "Continuous digital cold-chain monitoring for pharmaceuticals, perishables, and temperature-sensitive freight.",
+    "scope_specialized": "Specialized & Expedited",
+    "scope_specialized_desc": "Dual-driver expedited teams, customs bonded transit, and secure cross-border transfer.",
+    "fleet_title": "Fleet Assets & Physical Footprint",
+    "fleet_us_title": "100+ Power Units (USA)",
+    "fleet_us_desc": "Interstate fleet domiciled in El Paso, TX and Santa Teresa, NM.",
+    "fleet_mx_title": "200+ Power Units (Cd. Juárez)",
+    "fleet_mx_desc": "Dedicated cross-border drayage, transfers, and national tractors in Cd. Juárez, CHIH.",
+    "fleet_net_title": "1,000+ Extended Partner Network",
+    "fleet_net_desc": "Vetted and qualified carrier capacity across USA, Mexico & Canada."
   },
   "services": {
     "title": "Portfolio of",
@@ -75,7 +101,71 @@
     "dot_desc": "Mobile mechanical service units and scheduled sanitation protocols.",
     "cta_button": "Request a Service Quote",
     "cta_quote": "Request a Quote",
-    "cta_contact": "Contact a Logistics Specialist"
+    "cta_contact": "Contact a Logistics Specialist",
+    "logistics_title_main": "Logistics Services",
+    "logistics_subtitle_main": "Core freight and asset solutions engineered for velocity and cross-border reliability.",
+    "specialized_title_main": "Specialized Services",
+    "specialized_subtitle_main": "Engineered transport configurations for complex, sensitive, or oversized cargo.",
+    "logistics_7": [
+      {
+        "title": "Cross-Border Drayage & Transfer",
+        "desc": "Seamless international bridge crossings at El Paso, Santa Teresa, and Cd. Juárez ports of entry with dedicated transfers."
+      },
+      {
+        "title": "Long-Haul Full Truckload (FTL)",
+        "desc": "Direct point-to-point interstate highway transportation across continental USA and Mexico."
+      },
+      {
+        "title": "Expedited Team Transit",
+        "desc": "Dual-driver teams providing non-stop linehaul service for just-in-time manufacturing and emergency freight."
+      },
+      {
+        "title": "Dedicated Fleet Operations",
+        "desc": "Contracted tractors and trailers exclusively assigned to your enterprise production and distribution schedule."
+      },
+      {
+        "title": "Yard Management & Hostler Services",
+        "desc": "On-site terminal switching, drop-and-hook orchestration, and secure staging at manufacturing plants."
+      },
+      {
+        "title": "Warehouse & Transload Services",
+        "desc": "Cross-docking, cargo consolidation, short-term warehousing, and freight transload at binational border hubs."
+      },
+      {
+        "title": "Samsara GPS Real-Time Telematics",
+        "desc": "Full asset visibility, automated geofence alarms, electronic logging, and temperature monitoring on every movement."
+      }
+    ],
+    "specialized_7": [
+      {
+        "title": "Heavy Haul & Overdimensional",
+        "desc": "Special permits, certified escort pilot coordination, and specialized multi-axle trailers for industrial equipment."
+      },
+      {
+        "title": "Flatbed & Step Deck Transportation",
+        "desc": "Open-deck transport for structural steel, construction materials, pipes, and irregular machinery."
+      },
+      {
+        "title": "Temperature-Controlled Refrigerated",
+        "desc": "State-of-the-art reefer units with continuous digital cold-chain temperature logging for perishable and pharma freight."
+      },
+      {
+        "title": "Hazmat Certified Transport",
+        "desc": "Certified hazardous material hauling strictly adhering to DOT, EPA, and Mexican SCT environmental protocols."
+      },
+      {
+        "title": "In-Bond Customs Shipments",
+        "desc": "Customs-bonded transport allowing duty-free movement of imported cargo directly to designated bonded facilities."
+      },
+      {
+        "title": "High-Value Cargo Escort & Convoy",
+        "desc": "Enhanced security protocols, dual GPS satellite transponders, panic alarms, and dedicated convoy security."
+      },
+      {
+        "title": "Custom Logistics Engineering",
+        "desc": "Supply chain modeling, network optimization, and bespoke freight routing engineered for multinational shippers."
+      }
+    ]
   },
   "security": {
     "badge": "CTPAT & FMCSA Security Shield",
@@ -114,6 +204,55 @@
       "Undercarriage & lower frame",
       "Electrical lights & brake lamps",
       "K9 inspection & biological scan"
+    ],
+    "ctpat_intro_title": "CTPAT Tier Certification & Bilateral Security Shield",
+    "ctpat_intro_text": "As a certified CTPAT partner collaborating directly with U.S. Customs and Border Protection (CBP) and Mexican customs authorities, Warhorse implements exhaustive multi-layer security protocols. Every driver, tractor, trailer, and terminal operates under verifiable, auditable chain-of-custody standards.",
+    "points_11_title": "11-Point Core Security & Compliance Standards",
+    "points_11": [
+      {
+        "title": "17-Point CTPAT Vehicle & Trailer Inspection",
+        "desc": "Mandatory physical and mechanical verification covering bumper, engine, tires, floor, ceiling, fifth wheel, and undercarriage before every border dispatch."
+      },
+      {
+        "title": "ISO 17712 High-Security Bolt Seals",
+        "desc": "Numbered, tamper-evident high-security seals verified, recorded, and audited at point of origin, customs crossing, and final delivery."
+      },
+      {
+        "title": "24/7 Satellite GPS & Route Telematics",
+        "desc": "Continuous real-time asset tracking powered by Samsara with automated alerts for unauthorized door openings or stops."
+      },
+      {
+        "title": "Vetted Drivers & Drug Screening",
+        "desc": "10-year employment history audits, criminal record background checks, biometric validation, and strict random drug screening."
+      },
+      {
+        "title": "Geo-Fenced Border Corridors",
+        "desc": "Enforced approved transit corridors with pre-designated safe rest zones; immediate dispatch alarms upon route deviation."
+      },
+      {
+        "title": "Terminal Physical Security & CCTV",
+        "desc": "Fully fenced, well-lit yards equipped with 24/7 high-definition recorded CCTV coverage and guard checkpoints."
+      },
+      {
+        "title": "Dual-Sign Off Seal Protocols",
+        "desc": "Dual verification sign-off between security guards and operators with photographic evidence logged in digital archives."
+      },
+      {
+        "title": "Emergency Rapid Response Readiness",
+        "desc": "Direct emergency escalation bridges with federal highway authorities and bilateral law enforcement agencies."
+      },
+      {
+        "title": "CBP FAST Lane Certification",
+        "desc": "Qualification for Free and Secure Trade (FAST) expedited customs processing lanes at major international border crossings."
+      },
+      {
+        "title": "Bilateral Regulatory Safety Compliance",
+        "desc": "100% adherence to FMCSA (US DOT) safety regulations and Mexican Secretaría de Infraestructura, Comunicaciones y Transportes (SCT)."
+      },
+      {
+        "title": "Biometric & Electronic Access Control",
+        "desc": "Electronic logging and biometric security locks preventing unauthorized access to cabs, terminals, and operational hubs."
+      }
     ]
   },
   "contact": {
@@ -151,7 +290,17 @@
       "ltl": "LTL (Less Than Truckload)",
       "special": "Special Project / Overdimensional",
       "managed": "Managed Transportation / 5PL"
-    }
+    },
+    "binational_title": "Binational Departmental Directory",
+    "binational_desc": "Direct contact channels for operations, safety, compliance, quotes, and HR across USA and Mexico.",
+    "us_group": "United States",
+    "mx_group": "México",
+    "dept_ctpat_us": "CTPAT Compliance & Security",
+    "dept_quotes_us": "Quotes & Billing",
+    "dept_hr_us": "Human Resources",
+    "dept_ctpat_mx": "Seguridad y Cumplimiento CTPAT",
+    "dept_quotes_mx": "Cotizaciones y Cobranza",
+    "dept_hr_mx": "Recursos Humanos"
   },
   "footer": {
     "tagline": "\"Safety drives us. Compliance defines us. Your success moves us forward.\"",
@@ -231,5 +380,102 @@
     "date_required": "Please select a valid future pickup date.",
     "location_required": "Please provide origin and delivery locations.",
     "needs_required": "Please describe your shipping needs."
+  },
+  "carrier_page": {
+    "badge": "Carrier Network",
+    "title": "Become a Warhorse Carrier Partner",
+    "subtitle": "Join our trusted cross-border carrier network. Access consistent freight volume, transparent payments, and dedicated bilingual support.",
+    "packet_block_title": "Carrier Packet",
+    "packet_block_desc": "Everything you need to get qualified, approved, and dispatched quickly.",
+    "why_haul_title": "Why Haul with Warhorse?",
+    "bullet_1_title": "Fuel Advance Program",
+    "bullet_1_desc": "Immediate fuel advances upon load pickup to keep your rigs rolling without out-of-pocket delays.",
+    "bullet_2_title": "Quick Pay Program",
+    "bullet_2_desc": "Flexible, hassle-free 24 to 48-hour payment options with clear terms and zero hidden deductions.",
+    "bullet_3_title": "Standard 30-Day Payment",
+    "bullet_3_desc": "Reliable, on-time standard net-30 settlements via direct electronic bank deposit.",
+    "bullet_4_title": "Dedicated Lanes & Consistent Freight",
+    "bullet_4_desc": "Access steady, year-round dry van, flatbed, and reefer freight between USA and Mexico manufacturing hubs.",
+    "bullet_5_title": "24/7 Bilingual Dispatch Support",
+    "bullet_5_desc": "Dedicated carrier reps in the U.S. and Mexico to assist with border crossings, paperwork, and check calls anytime.",
+    "form_title": "Request Carrier Packet",
+    "form_subtitle": "Fill out your carrier details below and our team will dispatch the official onboarding packet immediately.",
+    "usdot_or_sct": "USDOT Number or SCT Permit Number",
+    "usdot_or_sct_placeholder": "e.g. USDOT 3849120 or SCT 10294812",
+    "carrier_name": "Carrier Legal Name",
+    "carrier_name_placeholder": "Company / Carrier Name",
+    "state_province": "State / Province",
+    "state_province_placeholder": "e.g. Texas, New Mexico, Chihuahua, Nuevo León",
+    "contact_name": "Contact Name",
+    "contact_name_placeholder": "First and Last Name",
+    "email": "Dispatch / Business Email",
+    "email_placeholder": "dispatch@yourcarrier.com",
+    "phone": "Phone Number",
+    "phone_placeholder": "+1 (555) 000-0000 or +52 (656) 000-0000",
+    "notes": "Anything else we should know? (Optional)",
+    "notes_placeholder": "Tell us about your equipment count (Dry Vans, Flatbeds, Reefers), preferred lanes, or CTPAT status...",
+    "submit_btn": "Request Carrier Packet",
+    "submitting": "Submitting Request...",
+    "success_title": "Carrier Packet Request Received!",
+    "success_desc": "Thank you! Your request has been routed to our carrier onboarding desk at helpdesk@warhorsebrokerage.com. Check your email shortly for next steps.",
+    "validation_required": "This field is required.",
+    "validation_email": "Please provide a valid email address.",
+    "validation_phone": "Please provide a valid 10-digit phone number."
+  },
+  "resources_page": {
+    "live_badge": "Live System",
+    "coming_soon_badge": "Coming Soon",
+    "portal_admin_title": "Warhorse Admin Hub",
+    "portal_admin_desc": "Centralized enterprise operations portal for dispatch, load management, and internal oversight.",
+    "portal_driver_title": "Warhorse Driver Hub",
+    "portal_driver_desc": "Dedicated digital dashboard for fleet operators, active load assignments, and document uploads.",
+    "portal_samsara_title": "Samsara Cloud Telematics",
+    "portal_samsara_desc": "Enterprise GPS fleet management, engine diagnostics, safety camera recordings, and live temperature tracking.",
+    "portal_genesis_title": "Génesis TMS",
+    "portal_genesis_desc": "Official transportation management system for billing, cross-border manifests, and automated interchange.",
+    "portal_strategy_title": "Strategy Live (Legacy)",
+    "portal_strategy_desc": "Legacy portal for historical load board indexing, archived accounts, and historical rate auditing.",
+    "portal_transp_hub_title": "Warhorse Transportation Hub",
+    "portal_transp_hub_desc": "Next-generation integrated partner and shipper freight management portal.",
+    "portal_clockin_title": "Warhorse Driver Clock-In Hub",
+    "portal_clockin_desc": "Digital timekeeping and biometric shift management portal for yard hostlers and terminal drivers.",
+    "open_portal": "Launch Portal",
+    "disabled_notice": "Under Development"
+  },
+  "apply_wizard": {
+    "badge": "Careers & Employment",
+    "title": "Apply Today — Join Warhorse",
+    "subtitle": "Start your career with North America's leading cross-border logistics network. Complete the quick 4-step application below.",
+    "step_1_title": "Step 1: Contact Information",
+    "step_2_title": "Step 2: Driver Qualifications",
+    "step_3_title": "Step 3: Resume & Background",
+    "step_4_title": "Step 4: Review & Consent",
+    "step_of": "Step {{current}} of {{total}}",
+    "full_name": "Full Name",
+    "phone": "Phone Number",
+    "sms_consent": "You can text me at this number regarding application status.",
+    "email": "Email Address",
+    "city_state": "City / State",
+    "position": "Position of Interest",
+    "location": "Preferred Terminal Location",
+    "pref_lang": "Preferred Communication Language",
+    "license_type": "Commercial Driver's License Type",
+    "driving_exp": "Years of Commercial Driving Experience",
+    "cross_border_creds": "Cross-Border Credentials (Optional)",
+    "endorsements": "Endorsements (Optional)",
+    "route_type": "Preferred Route Type (Select at least one)",
+    "resume_file": "Attach Resume / Application Photo (Optional, up to 10 MB)",
+    "resume_hint": "Accepts PDF, DOC, DOCX, JPG, PNG. Photos of paper applications are welcome.",
+    "anything_else": "Anything else we should know? (Optional)",
+    "consent_checkbox": "I agree to be contacted by Warhorse about employment opportunities by phone, text, or email.",
+    "privacy_link": "View Privacy Notice",
+    "submit_btn": "Submit Application",
+    "submitting": "Submitting Application...",
+    "next_btn": "Continue to Next Step",
+    "prev_btn": "Back",
+    "success_title": "Application Submitted Successfully!",
+    "success_desc": "Thank you for applying to Warhorse! Your application has been routed directly to our recruitment department at {{email}}.",
+    "application_id": "Application Reference Folio:",
+    "apply_another": "Submit Another Application"
   }
 }

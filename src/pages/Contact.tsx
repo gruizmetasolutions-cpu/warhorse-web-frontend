@@ -54,10 +54,10 @@ export const Contact: React.FC = () => {
     <div className="w-full max-w-7xl mx-auto px-6 py-8 flex flex-col gap-10">
       
       <div className="flex flex-col gap-3">
-        <h1 className="text-3xl md:text-5xl font-black text-white">
-          Atención al Cliente & <span className="gold-gradient-text">Cotizaciones</span>
+        <h1 className="text-3xl md:text-5xl font-black text-[#1A1A1A]">
+          Atención al Cliente & <span className="underline decoration-[#1A1A1A]/30 underline-offset-8">Cotizaciones</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl">
+        <p className="text-[#595959] max-w-3xl text-base">
           Canales directos de comunicación y respuesta prioritaria para su operación transfronteriza.
         </p>
       </div>
@@ -65,51 +65,51 @@ export const Contact: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
         {/* Left Column: Direct Directory Bento Card */}
-        <GlassCard className="flex flex-col justify-between gap-6 p-8 border-[#C5A059]/30">
+        <GlassCard className="flex flex-col justify-between gap-6 p-8 bg-white border border-gray-200">
           <div className="flex flex-col gap-6">
-            <h2 className="text-xl font-bold text-white flex items-center gap-2">
-              <Shield className="text-[#C5A059]" size={20} />
+            <h2 className="text-xl font-bold text-[#1A1A1A] flex items-center gap-2">
+              <Shield className="text-[#1A1A1A]" size={20} />
               Directorio Especializado
             </h2>
 
             <div className="flex flex-col gap-4 text-xs">
-              <div className="p-3 rounded-xl bg-white/5 border border-white/5 flex flex-col gap-1">
-                <span className="font-bold text-[#C5A059] uppercase tracking-wider text-[10px]">Consultas Generales</span>
-                <a href="mailto:Helpdesk@warhorsebrokerage.com" className="text-gray-300 hover:underline break-all">Helpdesk@warhorsebrokerage.com</a>
+              <div className="p-3.5 rounded-xl bg-[#F5F5F5] border border-gray-200 flex flex-col gap-1">
+                <span className="font-bold text-[#1A1A1A] uppercase tracking-wider text-[10px]">Consultas Generales</span>
+                <a href="mailto:Helpdesk@warhorsebrokerage.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">Helpdesk@warhorsebrokerage.com</a>
               </div>
-              <div className="p-3 rounded-xl bg-white/5 border border-white/5 flex flex-col gap-1">
-                <span className="font-bold text-[#C5A059] uppercase tracking-wider text-[10px]">Ventas & Cotizaciones</span>
-                <a href="mailto:Quotes@WarhorseBrokerage.com" className="text-gray-300 hover:underline break-all">Quotes@WarhorseBrokerage.com</a>
-                <a href="mailto:Cotizaciones@WarhorseMexico.com" className="text-gray-300 hover:underline break-all">Cotizaciones@WarhorseMexico.com</a>
+              <div className="p-3.5 rounded-xl bg-[#F5F5F5] border border-gray-200 flex flex-col gap-1">
+                <span className="font-bold text-[#1A1A1A] uppercase tracking-wider text-[10px]">Ventas & Cotizaciones</span>
+                <a href="mailto:Quotes@WarhorseBrokerage.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">Quotes@WarhorseBrokerage.com</a>
+                <a href="mailto:Cotizaciones@WarhorseMexico.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">Cotizaciones@WarhorseMexico.com</a>
               </div>
-              <div className="p-3 rounded-xl bg-white/5 border border-white/5 flex flex-col gap-1">
-                <span className="font-bold text-[#C5A059] uppercase tracking-wider text-[10px]">Seguridad & Cumplimiento</span>
-                <a href="mailto:SafetyandCompliance@warhorsebrokerage.com" className="text-gray-300 hover:underline break-all">SafetyandCompliance@warhorsebrokerage.com</a>
+              <div className="p-3.5 rounded-xl bg-[#F5F5F5] border border-gray-200 flex flex-col gap-1">
+                <span className="font-bold text-[#1A1A1A] uppercase tracking-wider text-[10px]">Seguridad & Cumplimiento</span>
+                <a href="mailto:SafetyandCompliance@warhorsebrokerage.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">SafetyandCompliance@warhorsebrokerage.com</a>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col gap-3 pt-6 border-t border-white/10 text-xs">
-            <a href="tel:9152630708" className="flex items-center gap-2 text-gray-300 hover:text-[#C5A059]">
-              <Phone size={16} className="text-[#C5A059]" /> 915-263-0708 (Voz / WhatsApp)
+          <div className="flex flex-col gap-3 pt-6 border-t border-gray-200 text-xs">
+            <a href="tel:9152630708" className="flex items-center gap-2 text-[#595959] hover:text-[#1A1A1A]">
+              <Phone size={16} className="text-[#1A1A1A]" /> 915-263-0708 (Voz / WhatsApp)
             </a>
-            <div className="flex items-center gap-2 text-gray-400">
-              <MapPin size={16} className="text-[#C5A059]" /> El Paso, TX & Cd. Juárez, CHIH
+            <div className="flex items-center gap-2 text-[#595959]">
+              <MapPin size={16} className="text-[#1A1A1A]" /> El Paso, TX & Cd. Juárez, CHIH
             </div>
           </div>
         </GlassCard>
 
         {/* Right Column: Lead Form (2 cols wide) */}
-        <GlassCard className="lg:col-span-2 p-8">
-          <h2 className="text-2xl font-bold text-white mb-6">
+        <GlassCard className="lg:col-span-2 p-8 bg-white border border-gray-200">
+          <h2 className="text-2xl font-bold text-[#1A1A1A] mb-6">
             {t('contact.title')}
           </h2>
 
           {status === 'success' ? (
-            <div className="flex flex-col items-center justify-center p-12 text-center gap-4 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl">
-              <CheckCircle2 size={48} className="text-emerald-400" />
-              <h3 className="text-xl font-bold text-white">¡Solicitud Recibida!</h3>
-              <p className="text-sm text-gray-300">{t('contact.success')}</p>
+            <div className="flex flex-col items-center justify-center p-12 text-center gap-4 bg-emerald-50 border border-emerald-300 rounded-2xl">
+              <CheckCircle2 size={48} className="text-emerald-700" />
+              <h3 className="text-xl font-bold text-emerald-900">¡Solicitud Recibida!</h3>
+              <p className="text-sm text-emerald-800">{t('contact.success')}</p>
               <Button variant="outline" onClick={() => setStatus('idle')} className="mt-4">
                 Enviar otra solicitud
               </Button>
@@ -147,13 +147,13 @@ export const Contact: React.FC = () => {
               />
               
               <div className="flex flex-col gap-2 w-full">
-                <label className="text-xs font-semibold uppercase tracking-wider text-gray-400 pl-1">
+                <label className="text-xs font-semibold uppercase tracking-wider text-[#595959] pl-1">
                   {t('contact.form_message')}
                 </label>
                 <textarea
                   name="message"
                   placeholder="Detalles sobre origen, destino, tipo de mercancía o requerimientos CTPAT..."
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 outline-none transition-all duration-300 focus:border-[#C5A059] focus:ring-1 focus:ring-[#C5A059] min-h-[120px] resize-none"
+                  className="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 text-[#1A1A1A] placeholder-gray-400 outline-none transition-all duration-200 focus:border-[#1A1A1A] focus:ring-1 focus:ring-[#1A1A1A] min-h-[120px] resize-none"
                   value={formData.message}
                   onChange={handleChange}
                 />

@@ -13,14 +13,16 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props
 }) => {
-  let baseStyles = 'px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer';
+  let baseStyles = 'px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer';
 
   if (variant === 'primary') {
-    baseStyles += ' bg-[#C5A059] text-black hover:bg-[#d4b068] hover:shadow-[0_0_20px_rgba(197,160,89,0.4)] active:scale-95';
+    // DES-02: Botones primarios en negro sólido (#1A1A1A) con texto blanco
+    baseStyles += ' bg-[#1A1A1A] text-white hover:bg-black hover:shadow-md active:scale-[0.98]';
   } else if (variant === 'outline') {
-    baseStyles += ' border border-[#C5A059]/40 text-[#C5A059] hover:border-[#C5A059] hover:bg-[#C5A059]/10 active:scale-95';
+    // DES-02: Botones secundarios con borde negro (outline)
+    baseStyles += ' border-2 border-[#1A1A1A] text-[#1A1A1A] bg-transparent hover:bg-[#1A1A1A] hover:text-white active:scale-[0.98]';
   } else if (variant === 'ghost') {
-    baseStyles += ' text-gray-300 hover:text-white hover:bg-white/5 active:scale-95';
+    baseStyles += ' text-[#595959] hover:text-[#1A1A1A] hover:bg-gray-100 active:scale-[0.98]';
   }
 
   const widthClass = fullWidth ? 'w-full' : '';

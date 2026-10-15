@@ -19,25 +19,25 @@ export const Select: React.FC<SelectProps> = ({
   return (
     <div className="flex flex-col gap-2 w-full">
       {label && (
-        <label htmlFor={selectId} className="text-xs font-semibold uppercase tracking-wider text-gray-400 pl-1">
+        <label htmlFor={selectId} className="text-xs font-semibold uppercase tracking-wider text-[#595959] pl-1">
           {label}
         </label>
       )}
       <select
         id={selectId}
-        className={`w-full bg-[#1A1A1B] border border-white/10 rounded-xl px-4 py-3 text-white outline-none transition-all duration-300 focus:border-[#C5A059] focus:ring-1 focus:ring-[#C5A059] cursor-pointer ${error ? 'border-red-500/50' : ''} ${className}`}
+        className={`w-full bg-white border border-gray-300 rounded-xl px-4 py-3 text-[#1A1A1A] outline-none transition-all duration-200 focus:border-[#1A1A1A] focus:ring-1 focus:ring-[#1A1A1A] cursor-pointer ${error ? 'border-red-500' : ''} ${className}`}
         {...props}
       >
-        <option value="" disabled className="bg-[#1A1A1B] text-gray-400">
+        <option value="" disabled className="bg-white text-gray-400">
           -- Select an option --
         </option>
         {options.map((opt) => (
-          <option key={opt.value} value={opt.value} className="bg-[#1A1A1B] text-white">
+          <option key={opt.value} value={opt.value} className="bg-white text-[#1A1A1A]">
             {opt.label}
           </option>
         ))}
       </select>
-      {error && <span className="text-red-400 text-xs pl-1">{error}</span>}
+      {error && <span className="text-red-600 text-xs pl-1 font-medium">{error}</span>}
     </div>
   );
 };

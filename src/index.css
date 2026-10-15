@@ -1,62 +1,59 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #1A1A1B;
+  --color-primary: #1A1A1A;
   --color-accent: #C5A059;
 }
 
 :root {
-  --bg-dark: #0f0f10;
-  --card-bg: rgba(26, 26, 27, 0.7);
-  --card-border: rgba(197, 160, 89, 0.2);
-  --card-border-hover: rgba(197, 160, 89, 0.5);
+  --bg-light: #FFFFFF;
+  --bg-alt: #F5F5F5;
+  --card-bg: #FFFFFF;
+  --card-border: #E5E7EB;
+  --card-border-hover: #1A1A1A;
+  --text-main: #1A1A1A;
+  --text-muted: #595959;
   --accent-gold: #C5A059;
-  --text-main: #f3f4f6;
-  --text-muted: #9ca3af;
 }
 
 body {
-  background-color: var(--bg-dark);
-  background-image: 
-    radial-gradient(circle at 15% 15%, rgba(197, 160, 89, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 85% 85%, rgba(197, 160, 89, 0.05) 0%, transparent 40%);
-  background-attachment: fixed;
+  background-color: var(--bg-light);
   color: var(--text-main);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Glassmorphism & Bento Box utilities */
+/* Corporate Light Theme & Bento Box utilities (DES-01 & DES-02) */
 @layer utilities {
   .glass-card {
-    background: var(--card-bg);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--card-border);
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
     border-radius: 1rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .glass-card:hover {
-    border-color: var(--card-border-hover);
-    box-shadow: 0 10px 30px -10px rgba(197, 160, 89, 0.15);
+    border-color: #1A1A1A;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
   }
 
   .glass-nav {
-    background: rgba(15, 15, 16, 0.8);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+    border-bottom: 1px solid #E5E7EB;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.04);
   }
 
   .gold-gradient-text {
-    background: linear-gradient(135deg, #FFF 0%, #C5A059 50%, #9A7B3E 100%);
+    background: linear-gradient(135deg, #1A1A1A 0%, #C5A059 60%, #9A7B3E 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .gold-glow {
-    box-shadow: 0 0 20px rgba(197, 160, 89, 0.3);
+    box-shadow: 0 4px 20px rgba(197, 160, 89, 0.15);
   }
 }
 

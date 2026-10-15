@@ -20,53 +20,53 @@ export const Home: React.FC = () => {
   return (
     <div className="w-full max-w-7xl mx-auto px-6 py-8 flex flex-col gap-12">
       
-      {/* Hero Section with Background Image */}
-      <section className="relative rounded-3xl overflow-hidden min-h-[60vh] flex flex-col justify-end p-8 md:p-12 border border-white/10 shadow-2xl">
+      {/* Hero Section (DES-01 & DES-03: Light Theme with photographic backdrop and B&W identity) */}
+      <section className="relative rounded-3xl overflow-hidden min-h-[58vh] flex flex-col justify-end p-8 md:p-12 border border-gray-200 shadow-xl bg-white">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1920&q=80" 
-            alt="Warhorse Black Kenworth Truck" 
-            className="w-full h-full object-cover opacity-35"
+            alt="Warhorse Truck Fleet" 
+            className="w-full h-full object-cover opacity-15"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f10] via-[#0f0f10]/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-white/40" />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center gap-6 py-6">
           
-          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#C5A059]/10 border border-[#C5A059]/30 text-[#C5A059] text-xs font-bold uppercase tracking-widest backdrop-blur-md">
-            <ShieldCheck size={16} />
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gray-100 border border-gray-300 text-[#1A1A1A] text-xs font-bold uppercase tracking-widest backdrop-blur-md">
+            <ShieldCheck size={16} className="text-[#1A1A1A]" />
             Cross-Border Logistics Excellence · US · MX · CA
           </div>
 
-          {/* PROTAGONIST LOGO */}
-          <div className="relative group my-1">
-            <div className="absolute inset-0 bg-[#C5A059]/20 blur-3xl rounded-full scale-125 pointer-events-none" />
+          {/* PROTAGONIST LOGO (DES-03: Blanco y negro corporativo sobre fondo blanco) */}
+          <div className="relative group my-2">
             <img 
               src="/logo.png" 
               alt="Warhorse Logistics Group" 
-              className="relative h-28 sm:h-36 md:h-44 lg:h-52 w-auto object-contain brightness-0 invert drop-shadow-[0_0_35px_rgba(197,160,89,0.7)] hover:scale-105 transition-all duration-500"
+              className="relative h-28 sm:h-36 md:h-44 w-auto object-contain drop-shadow-sm hover:scale-105 transition-all duration-500"
             />
           </div>
 
-          <h1 className="text-3xl md:text-5xl font-black tracking-tight text-white uppercase">
-            WARHORSE <span className="gold-gradient-text">LOGISTICS GROUP</span>
+          <h1 className="text-3xl md:text-5xl font-black tracking-tight text-[#1A1A1A] uppercase">
+            WARHORSE <span className="text-[#1A1A1A] underline decoration-[#1A1A1A]/30 underline-offset-8">LOGISTICS GROUP</span>
           </h1>
 
           <div className="flex flex-col gap-2 max-w-2xl">
-            <p className="text-xl md:text-2xl text-[#C5A059] font-semibold italic">
+            <p className="text-xl md:text-2xl text-[#1A1A1A] font-bold italic">
               "{t('home.hero_slogan')}"
             </p>
-            <p className="text-base md:text-lg text-gray-200 font-bold">
+            <p className="text-base md:text-lg text-[#595959] font-medium">
               {t('home.hero_value')}
             </p>
-            <p className="text-xs md:text-sm text-gray-400 font-normal leading-relaxed pt-1">
+            <p className="text-xs md:text-sm text-[#595959] font-normal leading-relaxed pt-1">
               {t('home.hero_desc')}
             </p>
           </div>
 
+          {/* CTA Buttons (DES-02: Primario negro sólido con texto blanco, secundario outline negro) */}
           <div className="flex flex-wrap justify-center gap-4 pt-2">
             <Link to="/contact">
-              <Button variant="primary" className="text-base px-8 py-3.5">
+              <Button variant="primary" className="text-base px-8 py-3.5 shadow-sm">
                 {t('nav.quote')}
                 <ArrowRight size={20} />
               </Button>
@@ -81,27 +81,27 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* KPI Bento Grid */}
-      <section className="flex flex-col gap-6">
+      {/* KPI Bento Grid (DES-01: Fondo blanco y gris alterno con tipografía WCAG AA) */}
+      <section className="flex flex-col gap-6 py-4">
         <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-bold text-white tracking-tight">Infraestructura & Capacidad Operativa</h2>
-          <p className="text-gray-400 text-sm">Métricas en tiempo real respaldadas por flotas propias y red transfronteriza.</p>
+          <h2 className="text-2xl font-bold text-[#1A1A1A] tracking-tight">Infraestructura & Capacidad Operativa</h2>
+          <p className="text-[#595959] text-sm">Métricas en tiempo real respaldadas por flotas propias y red transfronteriza.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {kpis.map((kpi, idx) => {
             const Icon = kpi.icon;
             return (
-              <GlassCard key={idx} className="flex flex-col justify-between min-h-[180px] p-6 group hover:scale-[1.02] transition-all">
+              <GlassCard key={idx} className="flex flex-col justify-between min-h-[180px] p-6 group hover:scale-[1.02] transition-all bg-white border border-gray-200">
                 <div className="flex justify-between items-start mb-4">
-                  <div className="w-12 h-12 rounded-2xl bg-[#C5A059]/10 border border-[#C5A059]/20 flex items-center justify-center text-[#C5A059] group-hover:bg-[#C5A059] group-hover:text-black transition-colors shrink-0">
+                  <div className="w-12 h-12 rounded-2xl bg-gray-100 border border-gray-200 flex items-center justify-center text-[#1A1A1A] group-hover:bg-[#1A1A1A] group-hover:text-white transition-colors shrink-0">
                     <Icon size={24} />
                   </div>
-                  <span className="text-3xl font-black text-white group-hover:text-[#C5A059] transition-colors">{kpi.value}</span>
+                  <span className="text-3xl font-black text-[#1A1A1A] group-hover:text-black transition-colors">{kpi.value}</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-1 leading-snug">{kpi.label}</h3>
-                  <p className="text-xs text-gray-400 leading-relaxed">{kpi.desc}</p>
+                  <h3 className="text-lg font-bold text-[#1A1A1A] mb-1 leading-snug">{kpi.label}</h3>
+                  <p className="text-xs text-[#595959] leading-relaxed">{kpi.desc}</p>
                 </div>
               </GlassCard>
             );

@@ -4,7 +4,7 @@ import { GlassCard } from '../components/ui/GlassCard';
 import { Input } from '../components/ui/Input';
 import { Select } from '../components/ui/Select';
 import { Button } from '../components/ui/Button';
-import { Phone, MapPin, Send, CheckCircle2, Shield } from 'lucide-react';
+import { MapPin, Send, CheckCircle2, Shield } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -75,26 +75,23 @@ export const Contact: React.FC = () => {
             <div className="flex flex-col gap-4 text-xs">
               <div className="p-3.5 rounded-xl bg-[#F5F5F5] border border-gray-200 flex flex-col gap-1">
                 <span className="font-bold text-[#1A1A1A] uppercase tracking-wider text-[10px]">Consultas Generales</span>
-                <a href="mailto:Helpdesk@warhorsebrokerage.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">Helpdesk@warhorsebrokerage.com</a>
+                <a href="mailto:helpdesk@warhorsebrokerage.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">helpdesk@warhorsebrokerage.com</a>
               </div>
               <div className="p-3.5 rounded-xl bg-[#F5F5F5] border border-gray-200 flex flex-col gap-1">
                 <span className="font-bold text-[#1A1A1A] uppercase tracking-wider text-[10px]">Ventas & Cotizaciones</span>
-                <a href="mailto:Quotes@WarhorseBrokerage.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">Quotes@WarhorseBrokerage.com</a>
-                <a href="mailto:Cotizaciones@WarhorseMexico.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">Cotizaciones@WarhorseMexico.com</a>
+                <a href="mailto:quotes@warhorsebrokerage.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">quotes@warhorsebrokerage.com</a>
+                <a href="mailto:cotizaciones@warhorsemexico.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">cotizaciones@warhorsemexico.com</a>
               </div>
               <div className="p-3.5 rounded-xl bg-[#F5F5F5] border border-gray-200 flex flex-col gap-1">
                 <span className="font-bold text-[#1A1A1A] uppercase tracking-wider text-[10px]">Seguridad & Cumplimiento</span>
-                <a href="mailto:SafetyandCompliance@warhorsebrokerage.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">SafetyandCompliance@warhorsebrokerage.com</a>
+                <a href="mailto:safetyandcompliance@warhorsebrokerage.com" className="text-[#595959] hover:text-[#1A1A1A] hover:underline break-all">safetyandcompliance@warhorsebrokerage.com</a>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col gap-3 pt-6 border-t border-gray-200 text-xs">
-            <a href="tel:9152630708" className="flex items-center gap-2 text-[#595959] hover:text-[#1A1A1A]">
-              <Phone size={16} className="text-[#1A1A1A]" /> 915-263-0708 (Voz / WhatsApp)
-            </a>
             <div className="flex items-center gap-2 text-[#595959]">
-              <MapPin size={16} className="text-[#1A1A1A]" /> El Paso, TX & Cd. Juárez, CHIH
+              <MapPin size={16} className="text-[#1A1A1A] shrink-0" /> El Paso, TX & Cd. Juárez, CHIH
             </div>
           </div>
         </GlassCard>

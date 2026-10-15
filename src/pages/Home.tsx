@@ -42,7 +42,7 @@ export const Home: React.FC = () => {
           <div className="relative group my-2">
             <img 
               src="/logo.png" 
-              alt="Warhorse Logistics Group" 
+              alt="WARHORSE" 
               className="relative h-28 sm:h-36 md:h-44 w-auto object-contain drop-shadow-sm hover:scale-105 transition-all duration-500"
             />
           </div>

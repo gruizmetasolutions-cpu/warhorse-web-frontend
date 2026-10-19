@@ -44,20 +44,17 @@ export const Home: React.FC = () => {
             {t('home.badge')}
           </div>
 
-          {/* Protagonist Logo (GL-02, HOME-03: Horse icon + WARHORSE typography only) */}
-          <div className="relative group my-1">
+          {/* Protagonist Logo (GL-02, HOME-03, TKT-WEB-016: Horse icon + WARHORSE typography only, no redundant h1 text) */}
+          <div className="relative group my-2">
             <img 
-              src="/logo.png" 
+              src="/logo.png?v=3" 
               alt="WARHORSE" 
-              className="relative h-24 sm:h-32 md:h-40 w-auto object-contain drop-shadow-sm hover:scale-105 transition-all duration-500"
+              className="relative h-28 sm:h-36 md:h-44 w-auto object-contain drop-shadow-sm hover:scale-105 transition-all duration-500"
             />
           </div>
 
-          {/* Hero Headline & Subtitle (HOME-04, 5.2, Open Item #2) */}
+          {/* Hero Subtitle (TKT-WEB-016: Purged duplicate h1 title_main, keeping subtitle immediately under logo) */}
           <div className="flex flex-col gap-2">
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-[#1A1A1A] uppercase">
-              {t('home.title_main')}
-            </h1>
             <p className="text-sm sm:text-base md:text-lg font-semibold tracking-wide text-[#1A1A1A] uppercase">
               {t('home.hero_subtitle')}
             </p>

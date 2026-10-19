@@ -52,7 +52,12 @@ export const ApplyToday: React.FC = () => {
   const [applicationFolio, setApplicationFolio] = useState<string>('');
 
   const isDriverPosition = (pos: string) => {
-    return ['CDL Driver (U.S.)', 'Local Driver (México)', 'Cross-Border Driver (México)'].includes(pos);
+    return [
+      'CDL Driver (U.S. only)',
+      'Local Driver (U.S. only)',
+      'Cross-border Driver / Chofer de Cruce (MX only)',
+      'Chofer Local (Rampero) (MX only)'
+    ].includes(pos);
   };
 
   const validateEmail = (val: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim());
@@ -184,9 +189,13 @@ export const ApplyToday: React.FC = () => {
     // If Santa Teresa, NM OR CDL Driver (U.S.) -> rh@warhorsebrokerage.com
     // If Ciudad Juárez, CHIH -> rh_mx@warhorsemexico.com
     let targetHr = 'rh@warhorsebrokerage.com';
-    if (formData.location === 'Santa Teresa, NM' || formData.position === 'CDL Driver (U.S.)') {
+    if (
+      formData.location === 'Santa Teresa, NM' ||
+      formData.position === 'CDL Driver (U.S. only)' ||
+      formData.position === 'Local Driver (U.S. only)'
+    ) {
       targetHr = 'rh@warhorsebrokerage.com';
-    } else if (formData.location === 'Ciudad Juárez, CHIH') {
+    } else {
       targetHr = 'rh_mx@warhorsemexico.com';
     }
 
@@ -358,7 +367,7 @@ export const ApplyToday: React.FC = () => {
                   name="cityState"
                   label={t('apply_wizard.city_state')}
                   required
-                  placeholder={isEs ? 'Ej. El Paso, TX / Cd. Juárez, CHIH' : 'e.g. El Paso, TX or Cd. Juárez, CHIH'}
+                  placeholder={isEs ? 'Ej. Santa Teresa, NM / Cd. Juárez, CHIH' : 'e.g. Santa Teresa, NM or Cd. Juárez, CHIH'}
                   value={formData.cityState}
                   onChange={handleChange}
                   error={errors.cityState}
@@ -684,7 +693,7 @@ export const ApplyToday: React.FC = () => {
                 <span>
                   {isEs ? 'Esta solicitud será canalizada directamente a la coordinación de RH en:' : 'This application will be routed to the recruitment desk at:'}{' '}
                   <strong>
-                    {formData.location === 'Santa Teresa, NM' || formData.position === 'CDL Driver (U.S.)' 
+                    {formData.location === 'Santa Teresa, NM' || formData.position === 'CDL Driver (U.S. only)' || formData.position === 'Local Driver (U.S. only)'
                       ? 'rh@warhorsebrokerage.com' 
                       : 'rh_mx@warhorsemexico.com'}
                   </strong>

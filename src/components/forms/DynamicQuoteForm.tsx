@@ -109,18 +109,13 @@ export const DynamicQuoteForm: React.FC<DynamicQuoteFormProps> = ({
     }
   };
 
-  const handleCountryToggle = (country: 'usa' | 'mexico') => {
-    setFormData((prev) => {
-      const updated = {
-        ...prev,
-        countryUsa: country === 'usa' ? !prev.countryUsa : prev.countryUsa,
-        countryMexico: country === 'mexico' ? !prev.countryMexico : prev.countryMexico
-      };
-      if (updated.countryUsa || updated.countryMexico) {
-        setErrors((errs) => ({ ...errs, country: undefined }));
-      }
-      return updated;
-    });
+  const handleCountrySelect = (country: 'usa' | 'mexico') => {
+    setFormData((prev) => ({
+      ...prev,
+      countryUsa: country === 'usa',
+      countryMexico: country === 'mexico'
+    }));
+    setErrors((errs) => ({ ...errs, country: undefined }));
   };
 
   const handlePrivacyToggle = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -380,20 +375,24 @@ export const DynamicQuoteForm: React.FC<DynamicQuoteFormProps> = ({
               <div className="flex flex-wrap items-center gap-6 pl-1">
                 <label className="flex items-center gap-2 text-sm text-[#1A1A1A] font-semibold cursor-pointer">
                   <input
-                    type="checkbox"
+                    type="radio"
+                    name="serviceCountry"
+                    value="usa"
                     checked={formData.countryUsa}
-                    onChange={() => handleCountryToggle('usa')}
-                    className="h-4 w-4 rounded border-gray-300 text-[#1A1A1A] focus:ring-[#1A1A1A] cursor-pointer"
+                    onChange={() => handleCountrySelect('usa')}
+                    className="h-4 w-4 border-gray-300 text-[#1A1A1A] focus:ring-[#1A1A1A] cursor-pointer"
                   />
                   <span>{t('quote_page.country_usa')} (quotes@warhorsebrokerage.com)</span>
                 </label>
 
                 <label className="flex items-center gap-2 text-sm text-[#1A1A1A] font-semibold cursor-pointer">
                   <input
-                    type="checkbox"
+                    type="radio"
+                    name="serviceCountry"
+                    value="mexico"
                     checked={formData.countryMexico}
-                    onChange={() => handleCountryToggle('mexico')}
-                    className="h-4 w-4 rounded border-gray-300 text-[#1A1A1A] focus:ring-[#1A1A1A] cursor-pointer"
+                    onChange={() => handleCountrySelect('mexico')}
+                    className="h-4 w-4 border-gray-300 text-[#1A1A1A] focus:ring-[#1A1A1A] cursor-pointer"
                   />
                   <span>{t('quote_page.country_mexico')} (cotizaciones@warhorsemexico.com)</span>
                 </label>

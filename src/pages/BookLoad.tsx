@@ -51,7 +51,7 @@ export const BookLoad: React.FC = () => {
       </GlassCard>
 
       <p className="text-xs text-[#595959]">
-        Warhorse Logistics Group &bull; Carrier Relations &bull; El Paso, TX &bull; Cd. Juárez, CHIH
+        Warhorse Logistics Group &bull; Carrier Relations &bull; Santa Teresa, NM &bull; Cd. Juárez, CHIH
       </p>
 
     </div>

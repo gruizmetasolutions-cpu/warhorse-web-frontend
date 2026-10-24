@@ -21,14 +21,14 @@ export const Resources: React.FC = () => {
     {
       title: t('resources_page.portal_admin_title'),
       desc: t('resources_page.portal_admin_desc'),
-      url: 'https://warhorse.dataholics.com.mx/',
+      url: '/app/',
       icon: Cpu,
       badgeColor: 'bg-emerald-50 text-emerald-800 border-emerald-200'
     },
     {
       title: t('resources_page.portal_driver_title'),
       desc: t('resources_page.portal_driver_desc'),
-      url: 'https://warhorse.dataholics.com.mx/',
+      url: '/app/',
       icon: Truck,
       badgeColor: 'bg-emerald-50 text-emerald-800 border-emerald-200'
     },

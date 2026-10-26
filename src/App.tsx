@@ -12,7 +12,6 @@ import { TrackLoad } from './pages/TrackLoad';
 import { BookLoad } from './pages/BookLoad';
 import { QuotePage } from './pages/QuotePage';
 import { CarrierPage } from './pages/CarrierPage';
-import { StyleGuide } from './pages/StyleGuide';
 
 function App() {
   return (
@@ -32,7 +31,6 @@ function App() {
           <Route path="quote" element={<QuotePage />} />
           <Route path="carrier" element={<CarrierPage />} />
           <Route path="carriers" element={<CarrierPage />} />
-          <Route path="styleguide" element={<StyleGuide />} />
         </Route>
       </Routes>
     </Router>

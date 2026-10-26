@@ -8,15 +8,33 @@ const resources = {
   es: { translation: es }
 };
 
+// Check for URL ?lang= parameter (e.g. ?lang=es or ?lang=en) for search engine indexing
+let initialLng = 'en';
+if (typeof window !== 'undefined' && window.location && window.location.search) {
+  const urlParams = new URLSearchParams(window.location.search);
+  const langQuery = urlParams.get('lang');
+  if (langQuery === 'es' || langQuery === 'en') {
+    initialLng = langQuery;
+  }
+}
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'en', // default language is English
+    lng: initialLng,
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false // react already safes from xss
     }
   });
+
+// Keep document.documentElement.lang in sync on initialization and language change
+if (typeof document !== 'undefined') {
+  document.documentElement.lang = initialLng;
+  i18n.on('languageChanged', (lng) => {
+    document.documentElement.lang = lng;
+  });
+}
 
 export default i18n;

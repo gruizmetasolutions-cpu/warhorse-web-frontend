@@ -31,6 +31,7 @@ export const Home: React.FC = () => {
           <img 
             src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1920&q=80" 
             alt="Warhorse Freight Fleet" 
+            loading="lazy"
             className="w-full h-full object-cover opacity-15"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-white via-white/85 to-white/40" />
@@ -49,15 +50,18 @@ export const Home: React.FC = () => {
             <img 
               src="/logo.png?v=3" 
               alt="WARHORSE" 
+              width={500}
+              height={176}
+              {...({ fetchpriority: "high" } as any)}
               className="relative h-28 sm:h-36 md:h-44 w-auto object-contain drop-shadow-sm hover:scale-105 transition-all duration-500"
             />
           </div>
 
-          {/* Hero Subtitle (TKT-WEB-016: Purged duplicate h1 title_main, keeping subtitle immediately under logo) */}
+          {/* Hero Subtitle as Semantic <h1> (TKT-WEB-020: Preserves exact styling while providing primary indexable heading) */}
           <div className="flex flex-col gap-2">
-            <p className="text-sm sm:text-base md:text-lg font-semibold tracking-wide text-[#1A1A1A] uppercase">
+            <h1 className="text-sm sm:text-base md:text-lg font-semibold tracking-wide text-[#1A1A1A] uppercase">
               {t('home.hero_subtitle')}
-            </p>
+            </h1>
           </div>
 
           {/* Value Propositions */}

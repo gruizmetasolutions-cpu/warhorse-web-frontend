@@ -1,0 +1,87 @@
+# Warhorse – docroot único: SPA (React) + API (CodeIgniter) en el mismo origen.
+# El SPA pide siempre /api/v1/... (mismo dominio), así que no hace falta CORS.
+
+Options -Indexes
+ServerSignature Off
+
+# ----------------------------------------------------------------------
+# Blindaje Staging (warhorse.dataholics.com.mx) - TKT-WEB-018
+# Inyecta X-Robots-Tag noindex para evitar canibalización y contenido duplicado
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    SetEnvIfNoCase Host "^warhorse\.dataholics\.com\.mx$" IS_STAGING
+    Header set X-Robots-Tag "noindex, nofollow, noarchive" env=IS_STAGING
+
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "no-referrer"
+    
+    # No guardar caché de index.html
+    <FilesMatch "index\.html$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Forzar HTTPS y dominio canónico sin www en producción (warhorsebrokerage.com)
+    RewriteCond %{HTTP_HOST} ^www\.warhorsebrokerage\.com$ [NC]
+    RewriteRule ^(.*)$ https://warhorsebrokerage.com/$1 [L,R=301]
+
+    # Reinyectar Authorization en FastCGI / LiteSpeed
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Servir robots_staging.txt con Disallow: / cuando la petición venga del subdominio de staging
+    RewriteCond %{HTTP_HOST} ^warhorse\.dataholics\.com\.mx$ [NC]
+    RewriteRule ^robots\.txt$ robots_staging.txt [L]
+
+    # 0) Allow PHP runner scripts to execute directly (bypasses SPA fallback)
+    RewriteCond %{REQUEST_URI} ^/run_.*\.php$
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ - [L]
+
+    # 1) Toda la API la maneja CodeIgniter (front controller index.php).
+    #    Forzamos SCRIPT_NAME=/index.php para que CI4 no elimine /api/ del URI.
+    RewriteCond %{REQUEST_URI} ^/api(/.*)?$
+    RewriteRule ^ index.php [E=SCRIPT_NAME:/index.php,L]
+
+    # 2) Rutas del Dashboard (/app/...)
+    # Si la petición empieza con /app, reescribimos al index.html del dashboard dentro del subdirectorio app/
+    RewriteCond %{REQUEST_URI} ^/app(/.*)?$
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ app/index.html [L]
+
+    # 3) Servir directamente archivos y carpetas reales físicamente existentes (robots.txt, sitemap.xml, assets, etc.)
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # 4) TKT-WEB-018: Si solicitan un archivo estático inexistente (.txt, .xml, .json, .ico, .png, etc.),
+    # devolver 404 real y JAMÁS index.html (excepto si viene dentro de /app/)
+    RewriteCond %{REQUEST_URI} !^/app/
+    RewriteRule \.(txt|xml|json|ico|png|jpg|jpeg|webp|svg|webmanifest)$ - [R=404,L]
+
+    # 5) Cualquier otra ruta HTML la resuelve el SPA corporativo en la raíz (React Router).
+    RewriteRule ^ index.html [L]
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType text/plain .txt
+    AddType application/xml .xml
+    AddType application/manifest+json .webmanifest
+</IfModule>
+
+# Cachea los assets hasheados del SPA (nombres con hash = inmutables)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+AddDefaultCharset UTF-8

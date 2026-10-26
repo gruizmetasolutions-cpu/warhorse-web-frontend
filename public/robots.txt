@@ -1,0 +1,37 @@
+# Warhorse Logistics Group - Official robots.txt
+# Production Domain: https://warhorsebrokerage.com
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /styleguide
+Disallow: /book-load
+
+# Explicit Allow for AI Search & Answer Engine Agents (GEO / AEO)
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://warhorsebrokerage.com/sitemap.xml
+# AI Agent Discovery Manifests:
+# https://warhorsebrokerage.com/llms.txt
+# https://warhorsebrokerage.com/llms-full.txt

@@ -1,0 +1,3 @@
+# Warhorse Staging Environment - Disallow All Crawlers
+User-agent: *
+Disallow: /

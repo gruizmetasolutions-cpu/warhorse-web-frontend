@@ -1,0 +1,42 @@
+# WARHORSE (Warhorse Brokerage LLC / Warhorse Transportation LLC / Warhorse México)
+
+> Binational 5PL freight brokerage and FMCSA/CTPAT certified asset-based carrier operating across the United States, Mexico, and Canada, headquartered in Santa Teresa, NM and Ciudad Juárez, CHIH.
+
+## Corporate Entities & Fleet Capacity
+- **Warhorse Brokerage LLC**: Core 5PL control tower and freight brokerage coordinating domestic and cross-border capacity across North America (1,000+ vetted network carriers).
+- **Warhorse Transportation LLC**: FMCSA certified U.S. asset-based carrier located in Santa Teresa, NM (100+ U.S. power units, dry vans, flatbeds, reefers, and roadside service units).
+- **Warhorse México**: Mexican asset-based carrier and dedicated cross-border drayage/transfer operator in Ciudad Juárez, Chihuahua (200+ power units).
+
+## Core Logistics Services
+- Full Truckload (FTL) & Less-Than-Truckload (LTL)
+- Cross-Border Drayage & Transfers (Santa Teresa, NM / El Paso border corridor / Ciudad Juárez, CHIH)
+- Flatbed, Step-Deck & Oversized Specialized Freight
+- Refrigerated (Reefer) Temperature-Controlled Freight
+- Intermodal & Bobtail Services
+- Warehousing, Cross-Docking, Transloading & Yard Management
+- 5PL Control Tower & Customized Dedicated Fleets
+
+## Security & Compliance
+- CTPAT Certified (United States & Mexico)
+- FMCSA Registered & Compliant Carrier
+- ISO 17712 High-Security Barrier Seals
+- 24/7 Real-Time GPS Satellite Tracking via Samsara
+
+## Direct Action URLs for Users & AI Agents
+- [Request a Commercial Freight Quote](https://warhorsebrokerage.com/quote): Submit standard (FTL, LTL, Intermodal, Flatbed, Reefer, Bobtail) or customized 5PL quote requests (`POST /api/quote`).
+- [Become a Carrier (Carrier Packet)](https://warhorsebrokerage.com/carriers): Onboarding for U.S. (USDOT) and Mexican (SCT) carriers with Fuel Advance and Quick Pay (`POST /api/carrier`).
+- [Apply Today (Driver & Operations Careers)](https://warhorsebrokerage.com/apply): Multi-step job application for CDL Drivers (U.S.), Local Drivers, Cross-Border Drivers (MX), Ramperos, Dispatch, Traffic, Brokerage, and Mechanics (`POST /api/apply`).
+- [Logistics Services Overview](https://warhorsebrokerage.com/services): Detailed breakdown of logistics and specialized transport capabilities.
+- [Security & CTPAT Compliance](https://warhorsebrokerage.com/security): Cross-border inspection and security protocols.
+- [Track a Load](https://warhorsebrokerage.com/track): Real-time shipment status lookup.
+- [Contact Directory](https://warhorsebrokerage.com/contact): Direct departmental emails for U.S. and Mexico operations (`POST /api/contact`).
+
+## Official Contact Directory
+- **U.S. Quotes & Billing**: quotes@warhorsebrokerage.com
+- **Mexico Quotes & Billing**: cotizaciones@warhorsemexico.com
+- **U.S. CTPAT Compliance & Security**: safetyandcompliance@warhorsebrokerage.com
+- **Mexico CTPAT Compliance & Security**: seguridad_mx@warhorsemexico.com
+- **U.S. Human Resources & Recruiting**: rh@warhorsebrokerage.com
+- **Mexico Human Resources & Recruiting**: rh_mx@warhorsemexico.com
+- **Carrier Onboarding & Helpdesk (U.S.)**: helpdesk@warhorsebrokerage.com / helpdesk@warhorsetransportation.com
+- **Customer Support (Mexico)**: helpdesk@warhorsemexico.com

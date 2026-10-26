@@ -1,0 +1,101 @@
+# WARHORSE LOGISTICS GROUP — COMPREHENSIVE LLM KNOWLEDGE MANIFEST (llms-full.txt)
+
+> Official Machine-Readable Knowledge Base & System Specifications for AI Search Engines, Autonomous B2B Agents, and Procurement Systems.
+> Domain: https://warhorsebrokerage.com/
+> Last Updated: 2026-10-26
+
+---
+
+## 1. Executive Identity & Structure
+WARHORSE is a premier binational logistics conglomerate and asset-based transportation network operating across the United States, Mexico, and Canada. The organization operates under a unified 5PL architecture comprising three integrated legal and operational entities:
+
+1. **Warhorse Brokerage LLC**:
+   - Role: Strategic 5PL Control Tower, freight brokerage, and capacity aggregator.
+   - Operations: United States domestic and transpacific/transatlantic intermodal management.
+   - Network: Over 1,000 qualified, vetted, and compliance-audited motor carriers.
+   - Core Value: Elastic capacity, dedicated accounts, spot and contract rate pricing.
+
+2. **Warhorse Transportation LLC**:
+   - Role: FMCSA Certified U.S. Asset-Based Motor Carrier.
+   - Headquarters / Terminal: Santa Teresa, New Mexico (US-Mexico border port).
+   - Assets: 100+ late-model tractors, dry vans, flatbeds, step-decks, reefers, and mobile roadside maintenance units.
+   - DOT / MC Authority: Active interstate and cross-border commercial freight authority.
+
+3. **Warhorse México**:
+   - Role: CTPAT Certified Mexican Motor Carrier and Dedicated Border Transfer Operator.
+   - Headquarters / Terminal: Ciudad Juárez, Chihuahua, Mexico.
+   - Assets: 200+ power units, 250+ 53-ft dry vans, 250+ refrigerated trailers, secure drop yard, and heavy maintenance facility.
+   - Operations: Rapid border crossings through Santa Teresa and El Paso commercial ports of entry.
+
+---
+
+## 2. Capabilities, Fleet & Equipment Specs
+
+### Full Truckload (FTL) & Less-Than-Truckload (LTL)
+- Standard 53' Dry Vans: High-cube, air-ride suspension, logistics posts for load bars and straps, swing doors, food-grade and clean dry freight.
+- Specialized Heavy Haul & Flatbed: 48' and 53' flatbeds, step-decks, lowboys, roll-tite/conestoga trailers for steel, machinery, raw industrial materials, and oversized components.
+- Temperature-Controlled (Reefer): Multi-temp and single-temp reefers with continuous temperature logging and remote Samsara telemetry for pharmaceuticals, produce, perishables, and cold-chain cargo.
+
+### Dedicated Cross-Border Drayage & Transfers (B1 / Ramperos)
+- Direct cross-border transfers connecting Ciudad Juárez industrial maquiladoras with Santa Teresa, NM and El Paso, TX distribution hubs.
+- B1 cross-border certified drivers with FAST card credentials.
+- Average border turnaround time optimized through private secure yards and expedited customs lanes.
+
+### 5PL Supply Chain Management & Control Tower
+- Customized 4PL / 5PL logistics outsourcing for high-volume manufacturing shippers.
+- Real-time carrier rate benchmarking, dedicated dispatch, EDI / API integrations, and cargo tracking.
+- Warehousing, cross-docking, transloading, and inventory holding in Santa Teresa, NM.
+
+---
+
+## 3. Security, Certifications & Compliance
+
+- **CTPAT Tier-Certified**: Rigorous 17-point container and trailer physical inspections, ISO 17712 high-security barrier bolt seals on 100% of international loads, and strict driver identity validation.
+- **FMCSA & DOT Compliant**: Strict adherence to Hours of Service (HOS), Electronic Logging Devices (ELD), regular vehicle maintenance audits, and satisfactory safety ratings.
+- **Samsara Satellite Telemetry**: Dual-facing cameras, 24/7 GPS real-time location pings, geofencing alarms, temperature alerts, and automated speed monitoring.
+
+---
+
+## 4. Key Public Workflows & Transactional Endpoints
+
+### 1. Request a Freight Quote
+- Public URL: `https://warhorsebrokerage.com/quote`
+- API Endpoint: `POST /api/quote`
+- Modes Supported: Standard Freight (FTL, LTL, Intermodal, Flatbed, Reefer, Bobtail) or Customized 5PL Solutions.
+- Response SLA: Commercial quotes dispatched within 15–30 minutes during business hours.
+
+### 2. Carrier Onboarding (Carrier Packet)
+- Public URL: `https://warhorsebrokerage.com/carriers`
+- API Endpoint: `POST /api/carrier`
+- Requirements: Active USDOT / MC number (or SCT for Mexican carriers), certificate of insurance (minimum $1,000,000 auto liability, $100,000 cargo), signed W-9 / tax forms.
+- Payment Terms: Fuel Advance, Quick Pay (24–48 hours), or standard Net 30 terms.
+
+### 3. Driver & Operational Careers
+- Public URL: `https://warhorsebrokerage.com/apply`
+- API Endpoint: `POST /api/apply`
+- Roles Available: Class A CDL Drivers (U.S.), Cross-Border Transfer Drivers (Mexico), Ramperos, Yard Hostlers, Logistics Dispatchers, Freight Brokers, and Diesel Mechanics.
+
+### 4. Shipment Tracking
+- Public URL: `https://warhorsebrokerage.com/track`
+- Tracking Mechanisms: Samsara satellite reference or bill of lading (BOL) tracking through operations control tower.
+
+---
+
+## 5. Departmental Directory & Official Communications
+
+### United States Operations
+- **Corporate & Commercial Quotes**: quotes@warhorsebrokerage.com
+- **Customer Helpdesk & Billing**: helpdesk@warhorsebrokerage.com / helpdesk@warhorsetransportation.com
+- **CTPAT Compliance & Safety**: safetyandcompliance@warhorsebrokerage.com
+- **Recruiting & Human Resources**: rh@warhorsebrokerage.com
+- **Terminal Location**: Santa Teresa, New Mexico, USA.
+
+### Mexico Operations
+- **Cotizaciones y Ventas**: cotizaciones@warhorsemexico.com
+- **Atención a Clientes y Despacho**: helpdesk@warhorsemexico.com
+- **Seguridad CTPAT y Tráfico**: seguridad_mx@warhorsemexico.com
+- **Recursos Humanos y Contrataciones**: rh_mx@warhorsemexico.com
+- **Terminal y Patio de Maniobras**: Ciudad Juárez, Chihuahua, México.
+
+---
+End of Manifest.

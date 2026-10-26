@@ -42,7 +42,7 @@ export const CarrierPage: React.FC = () => {
     privacy?: string;
   }>({});
 
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   const validateEmail = (val: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim());
   const validatePhone = (val: string) => val.replace(/\D/g, '').length >= 10;
@@ -64,7 +64,7 @@ export const CarrierPage: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     // Honeypot check
@@ -99,22 +99,35 @@ export const CarrierPage: React.FC = () => {
 
     setStatus('loading');
 
-    // Simulate API submission and store local backup
-    setTimeout(() => {
-      try {
-        const existing = JSON.parse(localStorage.getItem('warhorse_carrier_packets_backup') || '[]');
-        existing.push({
-          ...formData,
-          submitted_at: new Date().toISOString(),
-          routed_to: 'helpdesk@warhorsebrokerage.com'
-        });
-        localStorage.setItem('warhorse_carrier_packets_backup', JSON.stringify(existing));
-      } catch (err) {
-        console.error('LocalStorage backup error:', err);
-      }
+    try {
+      const res = await fetch('/api/carrier', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+      const data = await res.json().catch(() => null);
 
-      setStatus('success');
-    }, 600);
+      if (res.ok && data?.status === 'ok') {
+        try {
+          const existing = JSON.parse(localStorage.getItem('warhorse_carrier_packets_backup') || '[]');
+          existing.push({
+            ...formData,
+            folio: data?.folio,
+            submitted_at: new Date().toISOString(),
+            routed_to: 'helpdesk@warhorsebrokerage.com'
+          });
+          localStorage.setItem('warhorse_carrier_packets_backup', JSON.stringify(existing));
+        } catch (err) {
+          console.error('LocalStorage backup error:', err);
+        }
+        setStatus('success');
+      } else {
+        throw new Error(data?.message || 'Carrier registration failed');
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus('error');
+    }
   };
 
   return (
@@ -369,6 +382,14 @@ export const CarrierPage: React.FC = () => {
                 <span className="text-xs font-semibold text-red-600 mt-1">{errors.privacy}</span>
               )}
             </div>
+
+            {status === 'error' && (
+              <div className="p-4 bg-red-50 border border-red-200 rounded-xl text-red-700 text-xs sm:text-sm">
+                {isEs 
+                  ? 'Error al enviar el registro de transportista. Por favor intenta de nuevo o escribe a helpdesk@warhorsebrokerage.com' 
+                  : 'Failed to submit carrier packet. Please try again or contact helpdesk@warhorsebrokerage.com'}
+              </div>
+            )}
 
             {/* Submit Button */}
             <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">

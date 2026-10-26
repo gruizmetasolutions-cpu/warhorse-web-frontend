@@ -8,7 +8,8 @@ import { MapPin, Send, CheckCircle2, Shield, Lock, AlertCircle } from 'lucide-re
 import { Link } from 'react-router-dom';
 
 export const Contact: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isEs = i18n.language === 'es';
   
   const [formData, setFormData] = useState({
     name: '',
@@ -140,12 +141,14 @@ export const Contact: React.FC = () => {
           email: formData.email.toLowerCase(),
           phone: formData.phone,
           service: formData.service,
-          message: formData.message
+          message: formData.message,
+          lang: isEs ? 'es' : 'en'
         })
       });
 
-      // Even if backend mailer is offline in dev/staging, lead was saved in backup log
-      if (response.ok || response.status === 404 || response.status === 200) {
+      const resData = await response.json().catch(() => null);
+
+      if (response.ok && resData && (resData.status === 'ok' || resData.status === 'success')) {
         setStatus('success');
         setFormData({
           name: '',
@@ -161,9 +164,8 @@ export const Contact: React.FC = () => {
         setStatus('error');
       }
     } catch (err) {
-      console.error(err);
-      // Lead is safe in backup queue; render success to user
-      setStatus('success');
+      console.error('Contact submission error:', err);
+      setStatus('error');
     }
   };
 

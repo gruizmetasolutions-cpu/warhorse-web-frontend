@@ -20,6 +20,7 @@ export const ApplyToday: React.FC = () => {
   const isEs = i18n.language === 'es';
 
   const [step, setStep] = useState<number>(1);
+  const [resumeFile, setResumeFile] = useState<File | null>(null);
 
   // Form State
   const [formData, setFormData] = useState({
@@ -98,6 +99,7 @@ export const ApplyToday: React.FC = () => {
       return;
     }
 
+    setResumeFile(file);
     setFormData(prev => ({
       ...prev,
       resumeFileName: file.name,
@@ -199,27 +201,58 @@ export const ApplyToday: React.FC = () => {
       targetHr = 'rh_mx@warhorsemexico.com';
     }
 
-    const folio = 'WH-APP-' + Math.floor(100000 + Math.random() * 900000);
-    setSubmittedRouting(targetHr);
-    setApplicationFolio(folio);
+    const fd = new FormData();
+    fd.append('fullName', formData.fullName);
+    fd.append('email', formData.email);
+    fd.append('phone', formData.phone);
+    fd.append('position', formData.position);
+    fd.append('location', formData.location);
+    fd.append('payload_json', JSON.stringify({
+      ...formData,
+      routed_to: targetHr
+    }));
+    if (resumeFile) {
+      fd.append('resume', resumeFile);
+    }
 
-    setTimeout(() => {
-      // Save local backup in localStorage
-      try {
-        const existing = JSON.parse(localStorage.getItem('warhorse_applications_backup') || '[]');
-        existing.push({
-          folio,
-          ...formData,
-          routed_to: targetHr,
-          submitted_at: new Date().toISOString()
-        });
-        localStorage.setItem('warhorse_applications_backup', JSON.stringify(existing));
-      } catch (err) {
-        console.error('LocalStorage application backup error:', err);
-      }
+    fetch('/api/apply', {
+      method: 'POST',
+      body: fd
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data && data.status === 'ok') {
+          const folio = data.folio || ('WH-APP-' + Math.floor(100000 + Math.random() * 900000));
+          setSubmittedRouting(targetHr);
+          setApplicationFolio(folio);
 
-      setStatus('success');
-    }, 700);
+          try {
+            const existing = JSON.parse(localStorage.getItem('warhorse_applications_backup') || '[]');
+            existing.push({
+              folio,
+              ...formData,
+              routed_to: targetHr,
+              submitted_at: new Date().toISOString()
+            });
+            localStorage.setItem('warhorse_applications_backup', JSON.stringify(existing));
+          } catch (err) {
+            console.error('LocalStorage application backup error:', err);
+          }
+          setStatus('success');
+        } else {
+          throw new Error(data?.message || 'Application submission failed');
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        setStatus('idle');
+        setErrors(prev => ({
+          ...prev,
+          consent: isEs 
+            ? 'Error al enviar la postulación. Por favor intenta de nuevo o escribe a ' + targetHr
+            : 'Failed to submit application. Please try again or write to ' + targetHr
+        }));
+      });
   };
 
   const totalSteps = isDriverPosition(formData.position) ? 4 : 3;

@@ -210,17 +210,23 @@ export const DynamicQuoteForm: React.FC<DynamicQuoteFormProps> = ({
     }
 
     // 5. Backend Dispatch
+    setStatus('loading');
     try {
-      await fetch('/api/quote', {
+      const res = await fetch('/api/quote', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       });
-      setStatus('success');
-      if (onSuccess) onSuccess();
+      const data = await res.json().catch(() => null);
+      if (res.ok && data?.status === 'ok') {
+        setStatus('success');
+        if (onSuccess) onSuccess();
+      } else {
+        throw new Error(data?.message || 'Failed to submit quote request');
+      }
     } catch (err) {
       console.error(err);
-      setStatus('success'); // Lead secured in local store
+      setStatus('error');
     }
   };
 

@@ -286,21 +286,24 @@
     "success": "Su solicitud ha sido enviada exitosamente. Un especialista en logística se comunicará a la brevedad.",
     "send_another": "Enviar otra solicitud",
     "services_options": {
-      "ftl": "FTL (Carga Completa)",
-      "ltl": "LTL (Carga Consolidada)",
-      "special": "Proyecto Especial / Sobredimensionado",
-      "managed": "Managed Transportation / 5PL"
+      "ftl_ltl": "FTL, LTL y Carga Dedicada",
+      "managed_compliance": "Managed Transportation y Cumplimiento",
+      "general": "Consultas Generales",
+      "rate_quotes": "Cotización de Tarifas",
+      "dispatch_escalation": "Escalamiento de Despacho"
     },
     "binational_title": "Directorio Departamental Binacional",
     "binational_desc": "Canales de contacto directo para operaciones, seguridad, cumplimiento, cotizaciones y RH en EE. UU. y México.",
     "us_group": "Estados Unidos",
     "mx_group": "México",
-    "dept_ctpat_us": "CTPAT Compliance & Security",
-    "dept_quotes_us": "Quotes & Billing",
-    "dept_hr_us": "Human Resources",
-    "dept_ctpat_mx": "Seguridad y Cumplimiento CTPAT",
-    "dept_quotes_mx": "Cotizaciones y Cobranza",
-    "dept_hr_mx": "Recursos Humanos"
+    "dept_ctpat_us": "Seguridad, Cumplimiento y CTPAT",
+    "dept_quotes_us": "Cotizaciones y Tarifas (FTL/LTL)",
+    "dept_hr_us": "Recursos Humanos (EE. UU.)",
+    "dept_ctpat_mx": "Seguridad, Cumplimiento y CTPAT",
+    "dept_quotes_mx": "Cotizaciones y Tarifas (FTL/LTL)",
+    "dept_hr_mx": "Recursos Humanos (México)",
+    "dept_dispatch_us": "Carrier Packet y Escalamiento de Despacho",
+    "dept_dispatch_mx": "Carrier Packet y Despacho"
   },
   "footer": {
     "tagline": "\"La seguridad nos guía. El cumplimiento nos define. Su éxito nos mueve hacia adelante.\"",

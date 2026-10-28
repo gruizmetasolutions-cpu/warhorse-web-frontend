@@ -114,7 +114,7 @@ export const CarrierPage: React.FC = () => {
             ...formData,
             folio: data?.folio,
             submitted_at: new Date().toISOString(),
-            routed_to: 'helpdesk@warhorsebrokerage.com'
+            routed_to: 'Dispatch@WarhorseTransportation.com'
           });
           localStorage.setItem('warhorse_carrier_packets_backup', JSON.stringify(existing));
         } catch (err) {
@@ -216,7 +216,7 @@ export const CarrierPage: React.FC = () => {
             </p>
             <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 text-xs text-[#595959] flex items-center gap-2">
               <FileText size={16} className="text-[#1A1A1A]" />
-              <span>{isEs ? 'Enrutado oficial:' : 'Official dispatch:'} <strong>helpdesk@warhorsebrokerage.com</strong></span>
+              <span>{isEs ? 'Enrutado oficial:' : 'Official dispatch:'} <strong>Dispatch@WarhorseTransportation.com</strong></span>
             </div>
             <Button 
               variant="outline" 
@@ -386,8 +386,8 @@ export const CarrierPage: React.FC = () => {
             {status === 'error' && (
               <div className="p-4 bg-red-50 border border-red-200 rounded-xl text-red-700 text-xs sm:text-sm">
                 {isEs 
-                  ? 'Error al enviar el registro de transportista. Por favor intenta de nuevo o escribe a helpdesk@warhorsebrokerage.com' 
-                  : 'Failed to submit carrier packet. Please try again or contact helpdesk@warhorsebrokerage.com'}
+                  ? 'Error al enviar el registro de transportista. Por favor intenta de nuevo o escribe a Dispatch@WarhorseTransportation.com' 
+                  : 'Failed to submit carrier packet. Please try again or contact Dispatch@WarhorseTransportation.com'}
               </div>
             )}
 
@@ -395,7 +395,7 @@ export const CarrierPage: React.FC = () => {
             <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-2 text-xs text-[#595959]">
                 <ShieldCheck size={16} className="text-[#1A1A1A]" />
-                <span>{isEs ? 'Enrutamiento oficial a helpdesk@warhorsebrokerage.com' : 'Direct dispatch to helpdesk@warhorsebrokerage.com'}</span>
+                <span>{isEs ? 'Enrutamiento oficial a Dispatch@WarhorseTransportation.com' : 'Direct dispatch to Dispatch@WarhorseTransportation.com'}</span>
               </div>
               <Button
                 type="submit"

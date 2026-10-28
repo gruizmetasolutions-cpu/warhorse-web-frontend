@@ -32,7 +32,7 @@ export const BookLoad: React.FC = () => {
 
         <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 w-full justify-center">
           <a
-            href="mailto:quotes@warhorsebrokerage.com"
+            href="mailto:Dispatch@WarhorseTransportation.com"
             className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#1A1A1A] text-white font-bold text-sm hover:bg-black transition-all w-full sm:w-auto"
           >
             <Mail size={16} />

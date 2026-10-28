@@ -286,21 +286,24 @@
     "success": "Your request has been submitted successfully. A logistics specialist will contact you shortly.",
     "send_another": "Send Another Request",
     "services_options": {
-      "ftl": "FTL (Full Truckload)",
-      "ltl": "LTL (Less Than Truckload)",
-      "special": "Special Project / Overdimensional",
-      "managed": "Managed Transportation / 5PL"
+      "ftl_ltl": "FTL, LTL & Dedicated",
+      "managed_compliance": "Managed Transportation & Compliance",
+      "general": "General Inquiries",
+      "rate_quotes": "Rate Quotes",
+      "dispatch_escalation": "Dispatch Escalation"
     },
     "binational_title": "Binational Departmental Directory",
     "binational_desc": "Direct contact channels for operations, safety, compliance, quotes, and HR across USA and Mexico.",
     "us_group": "United States",
     "mx_group": "México",
-    "dept_ctpat_us": "CTPAT Compliance & Security",
-    "dept_quotes_us": "Quotes & Billing",
-    "dept_hr_us": "Human Resources",
-    "dept_ctpat_mx": "Seguridad y Cumplimiento CTPAT",
-    "dept_quotes_mx": "Cotizaciones y Cobranza",
-    "dept_hr_mx": "Recursos Humanos"
+    "dept_ctpat_us": "Safety, Compliance & CTPAT",
+    "dept_quotes_us": "Rate Quotes & Commercial (FTL/LTL)",
+    "dept_hr_us": "Human Resources (USA)",
+    "dept_ctpat_mx": "Seguridad, Cumplimiento y CTPAT",
+    "dept_quotes_mx": "Cotizaciones y Tarifas (FTL/LTL)",
+    "dept_hr_mx": "Recursos Humanos (México)",
+    "dept_dispatch_us": "Carrier Packet & Dispatch Escalation",
+    "dept_dispatch_mx": "Carrier Packet y Despacho"
   },
   "footer": {
     "tagline": "\"Safety drives us. Compliance defines us. Your success moves us forward.\"",

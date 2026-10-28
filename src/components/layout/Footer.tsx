@@ -4,10 +4,8 @@ import { ShieldCheck, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
-  const { t, i18n } = useTranslation();
-  const supportEmail = i18n.language === 'es' 
-    ? 'helpdesk@warhorsemexico.com' 
-    : 'helpdesk@warhorsetransportation.com';
+  const { t } = useTranslation();
+  const supportEmail = 'Quotes@warhorsebrokerage.com';
 
   return (
     <footer className="w-full bg-[#F5F5F5] border-t border-gray-200 mt-auto py-12">

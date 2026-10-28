@@ -164,14 +164,9 @@ export const DynamicQuoteForm: React.FC<DynamicQuoteFormProps> = ({
 
     setStatus('loading');
 
-    // 3. Dynamic Conditional Mailer Routing Logic (Open Item #3)
-    const targets: string[] = [];
-    if (formData.countryUsa) {
-      targets.push('quotes@warhorsebrokerage.com');
-    }
-    if (formData.countryMexico) {
-      targets.push('cotizaciones@warhorsemexico.com');
-    }
+    // 3. Dynamic Conditional Mailer Routing Logic [TKT-WEB-022]
+    // All Rate Quotes route to Quotes@warhorsebrokerage.com
+    const targets: string[] = ['Quotes@warhorsebrokerage.com'];
     setRoutedMailboxes(targets);
 
     const payload = {
@@ -388,7 +383,7 @@ export const DynamicQuoteForm: React.FC<DynamicQuoteFormProps> = ({
                     onChange={() => handleCountrySelect('usa')}
                     className="h-4 w-4 border-gray-300 text-[#1A1A1A] focus:ring-[#1A1A1A] cursor-pointer"
                   />
-                  <span>{t('quote_page.country_usa')} (quotes@warhorsebrokerage.com)</span>
+                  <span>{t('quote_page.country_usa')} (Quotes@warhorsebrokerage.com)</span>
                 </label>
 
                 <label className="flex items-center gap-2 text-sm text-[#1A1A1A] font-semibold cursor-pointer">
@@ -400,7 +395,7 @@ export const DynamicQuoteForm: React.FC<DynamicQuoteFormProps> = ({
                     onChange={() => handleCountrySelect('mexico')}
                     className="h-4 w-4 border-gray-300 text-[#1A1A1A] focus:ring-[#1A1A1A] cursor-pointer"
                   />
-                  <span>{t('quote_page.country_mexico')} (cotizaciones@warhorsemexico.com)</span>
+                  <span>{t('quote_page.country_mexico')} (Quotes@warhorsebrokerage.com)</span>
                 </label>
               </div>
 

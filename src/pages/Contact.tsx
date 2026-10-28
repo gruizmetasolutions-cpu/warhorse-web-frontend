@@ -32,10 +32,11 @@ export const Contact: React.FC = () => {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   const options = [
-    { value: 'ftl', label: t('contact.services_options.ftl') },
-    { value: 'ltl', label: t('contact.services_options.ltl') },
-    { value: 'special', label: t('contact.services_options.special') },
-    { value: 'managed', label: t('contact.services_options.managed') },
+    { value: 'ftl_ltl', label: t('contact.services_options.ftl_ltl') },
+    { value: 'managed_compliance', label: t('contact.services_options.managed_compliance') },
+    { value: 'general', label: t('contact.services_options.general') },
+    { value: 'rate_quotes', label: t('contact.services_options.rate_quotes') },
+    { value: 'dispatch_escalation', label: t('contact.services_options.dispatch_escalation') },
   ];
 
   // Inline Validation Helpers
@@ -206,23 +207,30 @@ export const Contact: React.FC = () => {
                 </div>
                 
                 <div className="flex flex-col gap-1 pt-1">
-                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_ctpat_us')}</span>
-                  <a href="mailto:safetyandcompliance@warhorsebrokerage.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
-                    safetyandcompliance@warhorsebrokerage.com
+                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_quotes_us')}</span>
+                  <a href="mailto:Quotes@warhorsebrokerage.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    Quotes@warhorsebrokerage.com
                   </a>
                 </div>
 
                 <div className="flex flex-col gap-1 pt-1">
-                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_quotes_us')}</span>
-                  <a href="mailto:quotes@warhorsebrokerage.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
-                    quotes@warhorsebrokerage.com
+                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_ctpat_us')}</span>
+                  <a href="mailto:SafetyandCompliance@warhorsebrokerage.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    SafetyandCompliance@warhorsebrokerage.com
+                  </a>
+                </div>
+
+                <div className="flex flex-col gap-1 pt-1">
+                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_dispatch_us')}</span>
+                  <a href="mailto:Dispatch@WarhorseTransportation.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    Dispatch@WarhorseTransportation.com
                   </a>
                 </div>
 
                 <div className="flex flex-col gap-1 pt-1">
                   <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_hr_us')}</span>
-                  <a href="mailto:rh@warhorsebrokerage.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
-                    rh@warhorsebrokerage.com
+                  <a href="mailto:RH@warhorsebrokerage.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    RH@warhorsebrokerage.com
                   </a>
                 </div>
               </div>
@@ -235,23 +243,30 @@ export const Contact: React.FC = () => {
                 </div>
                 
                 <div className="flex flex-col gap-1 pt-1">
-                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_ctpat_mx')}</span>
-                  <a href="mailto:seguridad_mx@warhorsemexico.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
-                    seguridad_mx@warhorsemexico.com
+                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_quotes_mx')}</span>
+                  <a href="mailto:Quotes@warhorsebrokerage.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    Quotes@warhorsebrokerage.com
                   </a>
                 </div>
 
                 <div className="flex flex-col gap-1 pt-1">
-                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_quotes_mx')}</span>
-                  <a href="mailto:cotizaciones@warhorsemexico.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
-                    cotizaciones@warhorsemexico.com
+                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_ctpat_mx')}</span>
+                  <a href="mailto:SafetyandCompliance@warhorsebrokerage.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    SafetyandCompliance@warhorsebrokerage.com
+                  </a>
+                </div>
+
+                <div className="flex flex-col gap-1 pt-1">
+                  <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_dispatch_mx')}</span>
+                  <a href="mailto:Dispatch@WarhorseTransportation.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    Dispatch@WarhorseTransportation.com
                   </a>
                 </div>
 
                 <div className="flex flex-col gap-1 pt-1">
                   <span className="font-semibold text-gray-500 text-[11px]">{t('contact.dept_hr_mx')}</span>
-                  <a href="mailto:rh_mx@warhorsemexico.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
-                    rh_mx@warhorsemexico.com
+                  <a href="mailto:RH_MX@WarhorseMexico.com" className="text-[#1A1A1A] font-medium hover:underline break-all">
+                    RH_MX@WarhorseMexico.com
                   </a>
                 </div>
               </div>

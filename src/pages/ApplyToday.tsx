@@ -207,8 +207,10 @@ export const ApplyToday: React.FC = () => {
     fd.append('phone', formData.phone);
     fd.append('position', formData.position);
     fd.append('location', formData.location);
+    fd.append('lang', isEs ? 'es' : 'en');
     fd.append('payload_json', JSON.stringify({
       ...formData,
+      lang: isEs ? 'es' : 'en',
       routed_to: targetHr
     }));
     if (resumeFile) {

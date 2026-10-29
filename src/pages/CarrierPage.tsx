@@ -103,7 +103,7 @@ export const CarrierPage: React.FC = () => {
       const res = await fetch('/api/carrier', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({ ...formData, lang: isEs ? 'es' : 'en' })
       });
       const data = await res.json().catch(() => null);
 

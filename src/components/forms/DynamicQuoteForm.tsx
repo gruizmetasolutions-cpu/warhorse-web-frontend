@@ -16,7 +16,7 @@ export const DynamicQuoteForm: React.FC<DynamicQuoteFormProps> = ({
   initialType = 'standard',
   onSuccess
 }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [searchParams] = useSearchParams();
 
   // Read URL query parameter ?type=customized or standard if provided
@@ -210,7 +210,23 @@ export const DynamicQuoteForm: React.FC<DynamicQuoteFormProps> = ({
       const res = await fetch('/api/quote', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
+        body: JSON.stringify({
+          ...formData,
+          ...payload,
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email.toLowerCase().trim(),
+          phone: formData.phone.trim(),
+          companyName: formData.companyName.trim(),
+          equipmentType: formData.equipmentType,
+          pickupDate: formData.pickupDate,
+          pickupLocation: formData.pickupLocation,
+          deliveryLocation: formData.deliveryLocation,
+          describeNeeds: formData.describeNeeds,
+          quoteType,
+          serviceCountry: formData.countryMexico ? 'Mexico' : 'USA',
+          lang: i18n.language === 'es' ? 'es' : 'en'
+        })
       });
       const data = await res.json().catch(() => null);
       if (res.ok && data?.status === 'ok') {

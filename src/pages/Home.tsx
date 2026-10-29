@@ -26,8 +26,8 @@ export const Home: React.FC = () => {
     <div className="w-full max-w-7xl mx-auto px-6 py-8 flex flex-col gap-12">
       
       {/* Hero Section (HOME-03 a HOME-05: Single Protagonist Identity, Refactored Hero Copy & Audience Selectors) */}
-      <section className="relative rounded-3xl overflow-hidden min-h-[65vh] flex flex-col justify-end p-8 md:p-14 border border-gray-200 shadow-xl bg-white">
-        <div className="absolute inset-0 z-0">
+      <section className="relative rounded-3xl min-h-[65vh] flex flex-col justify-end p-8 md:p-14 border border-gray-200 shadow-xl bg-white">
+        <div className="absolute inset-0 z-0 rounded-3xl overflow-hidden pointer-events-none">
           <img 
             src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1920&q=80" 
             alt="Warhorse Freight Fleet" 
@@ -96,7 +96,7 @@ export const Home: React.FC = () => {
               </button>
 
               {openDropdown === 'shipper' && (
-                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-white border border-gray-300 rounded-2xl shadow-2xl p-2 z-50 flex flex-col gap-1 text-left animate-in fade-in zoom-in-95 duration-150">
+                <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-3 w-64 bg-white border border-gray-300 rounded-2xl shadow-2xl p-2 z-50 flex flex-col gap-1 text-left animate-in fade-in zoom-in-95 slide-in-from-bottom-2 duration-150">
                   <a
                     href="/track"
                     target="_blank"
@@ -144,7 +144,7 @@ export const Home: React.FC = () => {
               </button>
 
               {openDropdown === 'carrier' && (
-                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-white border border-gray-300 rounded-2xl shadow-2xl p-2 z-50 flex flex-col gap-1 text-left animate-in fade-in zoom-in-95 duration-150">
+                <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-3 w-64 bg-white border border-gray-300 rounded-2xl shadow-2xl p-2 z-50 flex flex-col gap-1 text-left animate-in fade-in zoom-in-95 slide-in-from-bottom-2 duration-150">
                   <a
                     href="/book-load"
                     target="_blank"
@@ -192,7 +192,7 @@ export const Home: React.FC = () => {
               </button>
 
               {openDropdown === 'customer' && (
-                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-72 bg-white border border-gray-300 rounded-2xl shadow-2xl p-2 z-50 flex flex-col gap-1 text-left animate-in fade-in zoom-in-95 duration-150">
+                <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-3 w-72 bg-white border border-gray-300 rounded-2xl shadow-2xl p-2 z-50 flex flex-col gap-1 text-left animate-in fade-in zoom-in-95 slide-in-from-bottom-2 duration-150">
                   <a
                     href="/quote?type=customized"
                     target="_blank"

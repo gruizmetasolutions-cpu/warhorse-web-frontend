@@ -38,11 +38,11 @@ export const About: React.FC = () => {
       {/* 2. Hero Visual: Fleet & Trinational Network */}
       <GlassCard className="relative overflow-hidden min-h-[340px] flex flex-col justify-end p-8 md:p-10 border border-gray-200 bg-white shadow-sm">
         <img 
-          src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1600&q=80" 
+          src="/images/warhorse-about-yard-fleet-panorama.jpg" 
           alt="Warhorse Heavy Fleet & Cross-Border Logistics" 
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
+          className="absolute inset-0 w-full h-full object-cover opacity-35"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/85 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-white/20" />
         <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
           <div className="max-w-2xl">
             <span className="text-xs font-bold uppercase tracking-wider text-[#1A1A1A]">{t('about.map_badge')}</span>

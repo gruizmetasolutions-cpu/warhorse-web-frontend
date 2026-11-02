@@ -11,7 +11,11 @@ import {
   CheckCircle2, 
   ArrowRight, 
   ArrowLeft, 
-  Upload 
+  Upload,
+  Volume2,
+  VolumeX,
+  Play,
+  Pause
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -21,6 +25,31 @@ export const ApplyToday: React.FC = () => {
 
   const [step, setStep] = useState<number>(1);
   const [resumeFile, setResumeFile] = useState<File | null>(null);
+
+  // Commercial Video Player State (TKT-WEB-027)
+  const videoRef = React.useRef<HTMLVideoElement>(null);
+  const [isMuted, setIsMuted] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  const toggleAudio = () => {
+    if (videoRef.current) {
+      const next = !videoRef.current.muted;
+      videoRef.current.muted = next;
+      setIsMuted(next);
+    }
+  };
+
+  const togglePlay = () => {
+    if (videoRef.current) {
+      if (videoRef.current.paused) {
+        videoRef.current.play();
+        setIsPlaying(true);
+      } else {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      }
+    }
+  };
 
   // Form State
   const [formData, setFormData] = useState({
@@ -275,6 +304,74 @@ export const ApplyToday: React.FC = () => {
         <p className="text-[#595959] text-base md:text-lg">
           {t('apply_wizard.subtitle')}
         </p>
+      </div>
+
+      {/* Official Recruitment Commercial Video Hero (TKT-WEB-027) */}
+      <div className="relative rounded-3xl overflow-hidden border border-gray-200 bg-black shadow-2xl group">
+        <div className="relative aspect-video w-full overflow-hidden bg-black flex items-center justify-center">
+          <video
+            ref={videoRef}
+            src="/videos/WHT-Commercial.mp4"
+            autoPlay
+            loop
+            muted={isMuted}
+            playsInline
+            className="w-full h-full object-cover"
+          />
+
+          {/* Top Cinematic Badge */}
+          <div className="absolute top-4 left-4 sm:top-6 sm:left-6 z-10 flex items-center gap-2">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[11px] sm:text-xs font-bold uppercase tracking-widest text-white shadow-lg">
+              <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
+              {isEs ? 'Video Comercial Oficial · Warhorse Fleet' : 'Official Commercial · Warhorse Fleet'}
+            </span>
+          </div>
+
+          {/* Bottom Interactive Controls Bar */}
+          <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-center justify-between text-white z-10">
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={togglePlay}
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/30 text-white transition cursor-pointer"
+                title={isPlaying ? 'Pausar Video' : 'Reproducir Video'}
+              >
+                {isPlaying ? <Pause size={18} /> : <Play size={18} className="ml-0.5" />}
+              </button>
+              <div>
+                <div className="text-xs sm:text-sm font-bold text-white tracking-wide">
+                  {isEs ? 'Únete al Equipo Warhorse' : 'Drive With The Elite'}
+                </div>
+                <div className="text-[10px] sm:text-xs text-gray-300">
+                  {isEs ? 'Equipos nuevos, rutas dedicadas y el mejor pago por milla' : 'Late-model fleet, dedicated lanes & industry-leading CPM'}
+                </div>
+              </div>
+            </div>
+
+            {/* Audio Toggle Button */}
+            <button
+              type="button"
+              onClick={toggleAudio}
+              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl backdrop-blur-md border font-bold text-xs uppercase tracking-wider transition cursor-pointer ${
+                isMuted 
+                  ? 'bg-white/10 hover:bg-white/20 border-white/20 text-white' 
+                  : 'bg-emerald-500/80 hover:bg-emerald-500 border-emerald-400 text-white shadow-lg shadow-emerald-500/20'
+              }`}
+            >
+              {isMuted ? (
+                <>
+                  <VolumeX size={16} />
+                  <span className="hidden sm:inline">{isEs ? 'Activar Sonido' : 'Unmute Video'}</span>
+                </>
+              ) : (
+                <>
+                  <Volume2 size={16} />
+                  <span className="hidden sm:inline">{isEs ? 'Silenciar' : 'Mute Video'}</span>
+                </>
+              )}
+            </button>
+          </div>
+        </div>
       </div>
 
       {status === 'success' ? (

@@ -63,6 +63,38 @@ export const Security: React.FC = () => {
         </div>
       </GlassCard>
 
+      {/* 2.5 Security Yard & Mobile Road Support TS-13 Showcase (TKT-WEB-026) */}
+      <div className="relative rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-md">
+        <div className="relative aspect-[21/9] sm:aspect-[2.4/1] w-full overflow-hidden bg-gray-900">
+          <img 
+            src="/images/warhorse-security-service-unit-ts13.jpg" 
+            alt="Warhorse Road Support Unit TS-13 & Monitored Facility" 
+            className="w-full h-full object-cover object-center transform hover:scale-[1.02] transition-transform duration-700"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+          <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 text-white">
+            <div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-400/30 text-xs font-bold uppercase tracking-wider text-emerald-300">
+                <ShieldCheck size={14} />
+                {isEs ? 'Auxilio Vial & Instalaciones Vigiladas 24/7' : '24/7 Roadside Assistance & Monitored Facilities'}
+              </div>
+              <h3 className="text-lg sm:text-2xl font-black mt-2 text-white">
+                {isEs ? 'Unidad de Servicio TS-13 · Vigilancia Perimetral y Monitoreo CCTV' : 'Mobile Service Unit TS-13 · Perimetral Security & CCTV Surveillance'}
+              </h3>
+              <p className="text-xs sm:text-sm text-gray-200 max-w-2xl">
+                {isEs 
+                  ? 'Respaldo mecánico y auxilio vial inmediato en ruta, resguardado en patios cerrados con circuito cerrado, iluminación perimetral y estricto control de accesos CTPAT.' 
+                  : 'Dedicated immediate roadside assistance and mobile support unit, staged in secure yards equipped with perimeter lighting, 24/7 CCTV, and CTPAT physical access controls.'}
+              </p>
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-xl border border-white/20 text-xs font-bold text-white shrink-0">
+              <CheckCircle2 size={16} className="text-emerald-400" />
+              <span>{isEs ? 'Monitoreo 24/7/365' : 'Continuous 24/7 Response'}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* 3. The 11 Core Security Bullets */}
       <div className="flex flex-col gap-6">
         <div>

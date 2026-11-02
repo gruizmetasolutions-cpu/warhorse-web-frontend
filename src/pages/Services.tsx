@@ -66,6 +66,40 @@ export const Services: React.FC = () => {
         </p>
       </div>
 
+      {/* Featured Fleet Showcase: Unit WH192 + 53ft Dry Van (TKT-WEB-025) */}
+      <div className="relative rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-md">
+        <div className="relative aspect-[21/9] sm:aspect-[2.4/1] w-full overflow-hidden bg-gray-900">
+          <img 
+            src="/images/warhorse-services-unit-wh192-53ft.jpg" 
+            alt="Warhorse Transportation Unit WH192 + 53ft Trailer T103" 
+            className="w-full h-full object-cover object-center transform hover:scale-[1.02] transition-transform duration-700"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
+          <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 text-white">
+            <div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs font-bold uppercase tracking-wider text-white">
+                <Truck size={14} />
+                {isEs ? 'Flota Propia Activa' : 'Active Company Fleet'}
+              </div>
+              <h3 className="text-lg sm:text-2xl font-black mt-2 text-white">
+                {isEs ? 'Tractocamión WH192 · Remolque 53ft Seco T103' : 'Heavy Power Unit WH192 · 53ft Dry Van Trailer T103'}
+              </h3>
+              <p className="text-xs sm:text-sm text-gray-200 max-w-xl">
+                {isEs 
+                  ? 'Equipo de arrastre de última generación con rastreo satelital Samsara en tiempo real, doble seguro binacional y operador certificado CTPAT.' 
+                  : 'Late-model heavy tractor paired with 53ft dry van equipped with Samsara real-time GPS, dual binational insurance, and CTPAT-certified drivers.'}
+              </p>
+            </div>
+            <Link to="/quote">
+              <Button className="bg-white text-gray-900 hover:bg-gray-100 font-bold text-xs py-2 px-4 shadow-lg shrink-0">
+                {t('services.cta_quote')}
+                <ArrowRight size={14} className="ml-1" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* 1. 7 Logistics Services */}
       <div className="flex flex-col gap-6">
         <div className="border-b border-gray-200 pb-3 flex justify-between items-end">

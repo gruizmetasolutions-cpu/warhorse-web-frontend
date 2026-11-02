@@ -29,12 +29,12 @@ export const Home: React.FC = () => {
       <section className="relative rounded-3xl min-h-[65vh] flex flex-col justify-end p-8 md:p-14 border border-gray-200 shadow-xl bg-white">
         <div className="absolute inset-0 z-0 rounded-3xl overflow-hidden pointer-events-none">
           <img 
-            src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1920&q=80" 
-            alt="Warhorse Freight Fleet" 
+            src="/images/warhorse-home-hero-fleet-sunset.jpg" 
+            alt="Warhorse Freight Fleet at Sunset" 
             loading="lazy"
-            className="w-full h-full object-cover opacity-15"
+            className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/85 to-white/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-white/30" />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center gap-6 py-6">

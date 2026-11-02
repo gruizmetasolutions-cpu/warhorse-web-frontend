@@ -36,23 +36,24 @@ export const About: React.FC = () => {
       </div>
 
       {/* 2. Hero Visual: Fleet & Trinational Network */}
-      <GlassCard className="relative overflow-hidden min-h-[340px] flex flex-col justify-end p-8 md:p-10 border border-gray-200 bg-white shadow-sm">
+      <GlassCard className="relative overflow-hidden min-h-[380px] flex flex-col justify-end p-8 md:p-10 border border-gray-200 shadow-xl bg-gray-950">
         <img 
           src="/images/warhorse-about-yard-fleet-panorama.jpg" 
           alt="Warhorse Heavy Fleet & Cross-Border Logistics" 
-          className="absolute inset-0 w-full h-full object-cover opacity-35"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-white/20" />
-        <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+        {/* Deep contrast gradient: preserves full photo color while providing high contrast for white text */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent" />
+        <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 text-white">
           <div className="max-w-2xl">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#1A1A1A]">{t('about.map_badge')}</span>
-            <h2 className="text-2xl md:text-3xl font-black text-[#1A1A1A] mt-1">{t('about.map_title')}</h2>
-            <p className="text-sm text-[#595959] mt-2 leading-relaxed">
+            <span className="text-xs font-bold uppercase tracking-wider text-amber-400">{t('about.map_badge')}</span>
+            <h2 className="text-2xl md:text-3xl font-black text-white mt-1">{t('about.map_title')}</h2>
+            <p className="text-sm text-gray-200 mt-2 leading-relaxed">
               {t('about.map_desc')}
             </p>
           </div>
-          <div className="flex items-center gap-3 bg-[#F5F5F5] border border-gray-300 px-5 py-3 rounded-2xl text-[#1A1A1A] text-sm font-bold shadow-sm">
-            <Truck size={22} className="text-[#1A1A1A]" />
+          <div className="flex items-center gap-3 bg-white/15 backdrop-blur-md border border-white/30 px-5 py-3 rounded-2xl text-white text-sm font-bold shadow-lg">
+            <Truck size={22} className="text-amber-400" />
             {t('about.map_units')}
           </div>
         </div>

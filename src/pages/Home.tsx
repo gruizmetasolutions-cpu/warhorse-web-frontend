@@ -26,18 +26,18 @@ export const Home: React.FC = () => {
     <div className="w-full max-w-7xl mx-auto px-6 py-8 flex flex-col gap-12">
       
       {/* Hero Section (HOME-03 a HOME-05: Single Protagonist Identity, Refactored Hero Copy & Audience Selectors) */}
-      <section className="relative rounded-3xl min-h-[65vh] flex flex-col justify-end p-8 md:p-14 border border-gray-200 shadow-xl bg-white">
-        <div className="absolute inset-0 z-0 rounded-3xl overflow-hidden pointer-events-none">
+      <section className="relative rounded-3xl min-h-[70vh] flex flex-col justify-center items-center p-4 sm:p-8 md:p-12 border border-gray-200 shadow-2xl overflow-hidden bg-gray-950">
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <img 
             src="/images/warhorse-home-hero-fleet-sunset.jpg" 
             alt="Warhorse Freight Fleet at Sunset" 
-            loading="lazy"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-white/30" />
+          {/* Subtle contrast gradient: keeps the sunset fleet crisp, rich and vivid without white fog */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/35" />
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center gap-6 py-6">
+        <div className="relative z-10 max-w-3xl w-full mx-auto flex flex-col items-center text-center gap-5 py-8 px-6 sm:px-10 rounded-3xl bg-white/92 backdrop-blur-md border border-white/80 shadow-2xl">
           
           {/* Top Assurance Pill */}
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gray-100 border border-gray-300 text-[#1A1A1A] text-xs font-bold uppercase tracking-widest backdrop-blur-md">

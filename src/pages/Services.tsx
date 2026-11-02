@@ -90,11 +90,12 @@ export const Services: React.FC = () => {
                   : 'Late-model heavy tractor paired with 53ft dry van equipped with Samsara real-time GPS, dual binational insurance, and CTPAT-certified drivers.'}
               </p>
             </div>
-            <Link to="/quote">
-              <Button className="bg-white text-gray-900 hover:bg-gray-100 font-bold text-xs py-2 px-4 shadow-lg shrink-0">
-                {t('services.cta_quote')}
-                <ArrowRight size={14} className="ml-1" />
-              </Button>
+            <Link 
+              to="/quote" 
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-white hover:bg-gray-100 text-[#1A1A1A] font-bold text-xs shadow-lg transition-all transform hover:scale-105 shrink-0 cursor-pointer"
+            >
+              <span className="text-[#1A1A1A]">{t('services.cta_quote')}</span>
+              <ArrowRight size={14} className="text-[#1A1A1A]" />
             </Link>
           </div>
         </div>

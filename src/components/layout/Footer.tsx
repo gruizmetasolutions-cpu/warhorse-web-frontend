@@ -7,12 +7,16 @@ export const Footer: React.FC = () => {
   const { t } = useTranslation();
   const supportEmail = 'Quotes@warhorsebrokerage.com';
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  };
+
   return (
     <footer className="w-full bg-[#F5F5F5] border-t border-gray-200 mt-auto py-12">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         
         <div className="flex flex-col gap-4">
-          <Link to="/" className="flex items-center">
+          <Link to="/" onClick={scrollToTop} className="flex items-center">
             <img 
               src="/logo.png" 
               alt="WARHORSE" 
@@ -26,14 +30,14 @@ export const Footer: React.FC = () => {
         
         <div className="flex flex-col gap-3">
           <h3 className="font-bold text-[#1A1A1A] text-sm uppercase tracking-wider">{t('footer.quick_links')}</h3>
-          <Link to="/about" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.about')}</Link>
-          <Link to="/services" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.services')}</Link>
-          <Link to="/security" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.security')}</Link>
-          <Link to="/contact" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.contact')}</Link>
-          <Link to="/carrier" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.carrier_packet')}</Link>
-          <Link to="/apply" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.apply')}</Link>
-          <Link to="/resources" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.resources')}</Link>
-          <Link to="/privacy" className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors font-medium">{t('footer.privacy_notice')}</Link>
+          <Link to="/about" onClick={scrollToTop} className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.about')}</Link>
+          <Link to="/services" onClick={scrollToTop} className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.services')}</Link>
+          <Link to="/security" onClick={scrollToTop} className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.security')}</Link>
+          <Link to="/contact" onClick={scrollToTop} className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.contact')}</Link>
+          <Link to="/carrier" onClick={scrollToTop} className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.carrier_packet')}</Link>
+          <Link to="/apply" onClick={scrollToTop} className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.apply')}</Link>
+          <Link to="/resources" onClick={scrollToTop} className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors">{t('nav.resources')}</Link>
+          <Link to="/privacy" onClick={scrollToTop} className="text-sm text-[#595959] hover:text-[#1A1A1A] transition-colors font-medium">{t('footer.privacy_notice')}</Link>
         </div>
 
         <div className="flex flex-col gap-3">
@@ -65,7 +69,7 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-gray-300/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-[#595959]">
         <p>{t('footer.rights')}</p>
         <div className="flex items-center gap-4">
-          <Link to="/privacy" className="hover:underline hover:text-[#1A1A1A] transition-colors">{t('footer.privacy_notice')}</Link>
+          <Link to="/privacy" onClick={scrollToTop} className="hover:underline hover:text-[#1A1A1A] transition-colors">{t('footer.privacy_notice')}</Link>
           <span>·</span>
           <p className="font-medium">{t('footer.category')}</p>
         </div>

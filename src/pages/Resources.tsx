@@ -10,7 +10,8 @@ import {
   Database, 
   History, 
   Clock, 
-  Lock 
+  Lock,
+  Users 
 } from 'lucide-react';
 
 export const Resources: React.FC = () => {
@@ -52,6 +53,13 @@ export const Resources: React.FC = () => {
       url: 'https://test.strategylive.net/',
       icon: History,
       badgeColor: 'bg-amber-50 text-amber-800 border-amber-200'
+    },
+    {
+      title: t('resources_page.portal_hr_title'),
+      desc: t('resources_page.portal_hr_desc'),
+      url: 'https://vacaciones.warhorsebrokerage.com/',
+      icon: Users,
+      badgeColor: 'bg-emerald-50 text-emerald-800 border-emerald-200'
     }
   ];
 
@@ -87,7 +95,7 @@ export const Resources: React.FC = () => {
         </p>
       </div>
 
-      {/* 1. Live Operating Systems (5 Portals) */}
+      {/* 1. Live Operating Systems (6 Portals) */}
       <div className="flex flex-col gap-6">
         <div className="border-b border-gray-200 pb-3">
           <h2 className="text-2xl font-bold text-[#1A1A1A]">

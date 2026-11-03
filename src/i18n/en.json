@@ -443,7 +443,9 @@
     "portal_clockin_title": "Warhorse Driver Clock-In Hub",
     "portal_clockin_desc": "Digital timekeeping and biometric shift management portal for yard hostlers and terminal drivers.",
     "open_portal": "Launch Portal",
-    "disabled_notice": "Under Development"
+    "disabled_notice": "Under Development",
+    "portal_hr_title": "Warhorse HR Hub",
+    "portal_hr_desc": "Dedicated Human Resources portal for employee self-service, vacation requests, time-off management, and internal HR administration."
   },
   "apply_wizard": {
     "badge": "Careers & Employment",

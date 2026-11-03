@@ -443,7 +443,9 @@
     "portal_clockin_title": "Warhorse Driver Clock-In Hub",
     "portal_clockin_desc": "Registro digital y biométrico de jornadas laborales para operadores locales, patio y carretera.",
     "open_portal": "Ingresar al Portal",
-    "disabled_notice": "En Desarrollo"
+    "disabled_notice": "En Desarrollo",
+    "portal_hr_title": "Warhorse Hub de Recursos Humanos",
+    "portal_hr_desc": "Portal dedicado de Recursos Humanos para autogestión de colaboradores, solicitud de vacaciones, control de permisos y administración interna de personal."
   },
   "apply_wizard": {
     "badge": "Bolsa de Trabajo y Carreras",
